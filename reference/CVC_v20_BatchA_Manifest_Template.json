@@ -1,0 +1,152 @@
+{
+  "manifest_name": "CVC_v20_BatchA_Operational_Manifest",
+  "version": "1.0",
+  "scope": "Parts 4-9",
+  "target_media_count": {
+    "min": 70,
+    "max": 90
+  },
+  "items": [
+    {
+      "id": "batchA_tech_001",
+      "file": "technique__subclavia_landmark_right__clinical__01.jpg",
+      "domain": "technique",
+      "part_targets": [
+        "part4",
+        "atlas",
+        "osce"
+      ],
+      "media_type": "clinical_photo",
+      "didactic_function": [
+        "anatomia_viva",
+        "comparacao",
+        "pitfall"
+      ],
+      "source_type": "existing_asset",
+      "status": "planned",
+      "priority": "A",
+      "can_be_reused_in": [
+        "cross_cases",
+        "premium_review"
+      ],
+      "notes": "Landmark subclávio direito com relação clavícula/1a costela."
+    },
+    {
+      "id": "batchA_img_001",
+      "file": "imaging__tip_ideal_svc__radiograph__01.jpg",
+      "domain": "imaging",
+      "part_targets": [
+        "part5",
+        "atlas",
+        "mcq"
+      ],
+      "media_type": "radiograph",
+      "didactic_function": [
+        "confirmacao",
+        "comparacao",
+        "review"
+      ],
+      "source_type": "existing_asset",
+      "status": "planned",
+      "priority": "A",
+      "can_be_reused_in": [
+        "premium_review",
+        "teaching_suite"
+      ],
+      "notes": "RX com ponta ideal em SVC."
+    },
+    {
+      "id": "batchA_comp_001",
+      "file": "complication__pneumothorax_small__radiograph__01.jpg",
+      "domain": "complication",
+      "part_targets": [
+        "part6",
+        "mcq",
+        "osce"
+      ],
+      "media_type": "radiograph",
+      "didactic_function": [
+        "consequencia",
+        "pitfall",
+        "treino"
+      ],
+      "source_type": "curated_external",
+      "status": "planned",
+      "priority": "A",
+      "can_be_reused_in": [
+        "cross_cases",
+        "premium_review"
+      ],
+      "notes": "Pneumotórax pequeno pós-punção para reconhecimento precoce."
+    },
+    {
+      "id": "batchA_maint_001",
+      "file": "maintenance__good_dressing__clinical__01.jpg",
+      "domain": "maintenance",
+      "part_targets": [
+        "part7",
+        "osce"
+      ],
+      "media_type": "clinical_photo",
+      "didactic_function": [
+        "manutencao",
+        "comparacao",
+        "debriefing"
+      ],
+      "source_type": "existing_asset",
+      "status": "planned",
+      "priority": "A",
+      "can_be_reused_in": [
+        "teaching_suite",
+        "premium_review"
+      ],
+      "notes": "Curativo adequado com visualização útil do sítio."
+    },
+    {
+      "id": "batchA_host_001",
+      "file": "hostile__irradiated_chest__clinical__01.jpg",
+      "domain": "hostile",
+      "part_targets": [
+        "part8",
+        "decision_lab"
+      ],
+      "media_type": "clinical_photo",
+      "didactic_function": [
+        "comparacao",
+        "pitfall",
+        "treino"
+      ],
+      "source_type": "curated_external",
+      "status": "planned",
+      "priority": "A",
+      "can_be_reused_in": [
+        "cross_cases",
+        "osce"
+      ],
+      "notes": "Território hostil por radioterapia/cirurgia prévia."
+    },
+    {
+      "id": "batchA_close_001",
+      "file": "board__integrated_course_closure__01.jpg",
+      "domain": "cross_part",
+      "part_targets": [
+        "part9",
+        "premium_review"
+      ],
+      "media_type": "board",
+      "didactic_function": [
+        "review",
+        "comparacao",
+        "debriefing"
+      ],
+      "source_type": "derived_internal",
+      "status": "planned",
+      "priority": "A",
+      "can_be_reused_in": [
+        "cross_cases",
+        "teaching_suite"
+      ],
+      "notes": "Board final integrando decisão, técnica, confirmação e complicação."
+    }
+  ]
+}

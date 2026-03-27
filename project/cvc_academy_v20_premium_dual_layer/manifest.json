@@ -1,0 +1,62 @@
+{
+  "name": "CVC Academy v20+",
+  "short_name": "CVC Academy",
+  "description": "Plataforma medica visual offline-first para decisao de acesso, CVC, imagem, complicacoes, manutencao e ensino.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#09111e",
+  "theme_color": "#2563eb",
+  "lang": "pt-BR",
+  "categories": [
+    "medical",
+    "education"
+  ],
+  "icons": [
+    {
+      "src": "./assets/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Training Arena",
+      "short_name": "Arena",
+      "url": "./pages/training-arena.html",
+      "description": "Treino data-driven com memoria local e feedback graduado."
+    },
+    {
+      "name": "Dashboard Alpha",
+      "short_name": "Dashboard",
+      "url": "./pages/dashboard-alpha.html",
+      "description": "Painel operacional local do ecossistema."
+    },
+    {
+      "name": "Hub da Serie",
+      "short_name": "Serie",
+      "url": "./pages/v20-alpha-hub.html",
+      "description": "Trilha principal Parts 1 a 9."
+    },
+    {
+      "name": "Premium Review",
+      "short_name": "Review",
+      "url": "./pages/v20-premium-review.html",
+      "description": "Revisao transversal do ecossistema."
+    },
+    {
+      "name": "Casos Transversais",
+      "short_name": "Casos",
+      "url": "./pages/v20-cross-part-cases.html",
+      "description": "Casos multi-step entre decisao, tecnica e complicacao."
+    }
+  ]
+}

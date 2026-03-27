@@ -1,0 +1,248 @@
+{
+  "version": "v20+",
+  "updated_at": "2026-03-26",
+  "runtime": {
+    "primary_surface": "pages/training-arena.html",
+    "runtime_scripts": [
+      "scripts/training-arena-data.js",
+      "scripts/training-arena.js",
+      "scripts/dashboard-alpha.js"
+    ],
+    "dashboard_bridge": "pages/dashboard-alpha.html",
+    "local_storage_keys": [
+      "cvc.training.arena.progress.v1",
+      "cvc.training.arena.snapshot.v1"
+    ],
+    "offline_note": "runtime data fica em JavaScript local para funcionar tambem em abertura direta do bundle via file scheme"
+  },
+  "tracks": [
+    {
+      "id": "decision_track",
+      "title": "Decision before technique",
+      "goal": "Reforcar indicacao, escalada e familia antes do gesto tecnico.",
+      "surface_routes": [
+        "pages/training-arena.html",
+        "pages/v20-reality-class-part1.html",
+        "pages/v20-reality-class-part2.html",
+        "pages/v20-reality-class-part3.html",
+        "pages/v20-cross-part-cases.html"
+      ],
+      "teacher_use": "bom para discussao pre-procedimento e rounds"
+    },
+    {
+      "id": "procedure_track",
+      "title": "Technique, image and damage",
+      "goal": "Costurar gesto, confirmacao real, leitura em duas vistas e resposta precoce a complicacao.",
+      "surface_routes": [
+        "pages/training-arena.html",
+        "pages/v20-reality-class-part4.html",
+        "pages/v20-reality-class-part5.html",
+        "pages/v20-reality-class-part6.html",
+        "pages/v20-part4-osce.html",
+        "pages/v20-part5-osce.html"
+      ],
+      "teacher_use": "bom para laboratorio, osce e debriefing apos quase erro"
+    },
+    {
+      "id": "teaching_track",
+      "title": "Teaching and team culture",
+      "goal": "Treinar rubrica, bundle, trombose real, biofilme real, debriefing e cultura de remocao.",
+      "surface_routes": [
+        "pages/training-arena.html",
+        "pages/v20-reality-class-part7.html",
+        "pages/modo-professor.html",
+        "pages/v20-cross-part-cases.html",
+        "pages/revisao-integral.html"
+      ],
+      "teacher_use": "bom para sessao docente, alinhamento de equipe e debriefing de linha que a equipe quer salvar"
+    },
+    {
+      "id": "hostile_context_track",
+      "title": "Hostile territories and closure",
+      "goal": "Adaptar sitio, lado, manutencao e checklist a contexto ruim.",
+      "surface_routes": [
+        "pages/training-arena.html",
+        "pages/v20-reality-class-part8.html",
+        "pages/v20-reality-class-part9.html",
+        "pages/dreno-toracico.html",
+        "pages/v20-premium-review.html"
+      ],
+      "teacher_use": "bom para discussao de replano e revisao de desfecho"
+    },
+    {
+      "id": "visual_review_track",
+      "title": "Visual review",
+      "goal": "Revisar por boards, posters, atlas e mapas reutilizaveis.",
+      "surface_routes": [
+        "pages/training-arena.html",
+        "pages/v20-premium-atlas.html",
+        "pages/v20-graphics-catalog.html",
+        "pages/v20-part3-atlas.html",
+        "pages/v20-part5-atlas.html"
+      ],
+      "teacher_use": "bom para microaula e revisao rapida"
+    }
+  ],
+  "training_modes": [
+    {
+      "id": "solo",
+      "title": "Solo training",
+      "primary_output": "feedback imediato, score e memoria local"
+    },
+    {
+      "id": "examiner",
+      "title": "Examiner mode",
+      "primary_output": "rubrica observacional e debriefing"
+    }
+  ],
+  "modules": [
+    {
+      "id": "decision_ladder",
+      "title": "Decision ladder",
+      "track": "decision_track",
+      "part_targets": [
+        "part1",
+        "part2",
+        "part3"
+      ],
+      "item_count": 3,
+      "item_types": [
+        "mcq_single",
+        "trap",
+        "multi_step_case"
+      ],
+      "launch_route": "pages/training-arena.html"
+    },
+    {
+      "id": "technique_damage_control",
+      "title": "Technique and damage control",
+      "track": "procedure_track",
+      "part_targets": [
+        "part4",
+        "part5",
+        "part6"
+      ],
+      "item_count": 3,
+      "item_types": [
+        "mcq_single",
+        "visual_read",
+        "osce_station"
+      ],
+      "launch_route": "pages/training-arena.html"
+    },
+    {
+      "id": "hostile_closure_teaching",
+      "title": "Hostile context and closure",
+      "track": "teaching_track",
+      "part_targets": [
+        "part7",
+        "part8",
+        "part9"
+      ],
+      "item_count": 3,
+      "item_types": [
+        "true_false",
+        "multi_step_case",
+        "osce_station"
+      ],
+      "launch_route": "pages/training-arena.html"
+    }
+  ],
+  "item_types": [
+    "mcq_single",
+    "true_false",
+    "trap",
+    "visual_read",
+    "multi_step_case",
+    "osce_station"
+  ],
+  "failure_taxonomy": [
+    {
+      "id": "cognitive",
+      "title": "Cognitiva",
+      "summary": "erro de enquadramento, indicacao ou leitura do problema"
+    },
+    {
+      "id": "technical",
+      "title": "Tecnica",
+      "summary": "erro de gesto, sequencia, confirmacao ou resposta ao erro"
+    },
+    {
+      "id": "systemic",
+      "title": "Sistemica",
+      "summary": "erro de preparo, equipe, documentacao ou processo"
+    },
+    {
+      "id": "cultural",
+      "title": "Cultural",
+      "summary": "atalho perigoso normalizado pelo ambiente"
+    }
+  ],
+  "session_formats": [
+    {
+      "id": "micro_debrief",
+      "title": "Micro debrief",
+      "duration_min": 8,
+      "steps": [
+        "definir o quase erro",
+        "explicitar o gatilho",
+        "nomear a correcao prudente",
+        "fechar com uma frase operacional"
+      ]
+    },
+    {
+      "id": "osce_station",
+      "title": "OSCE station",
+      "duration_min": 12,
+      "steps": [
+        "apresentar o caso",
+        "observar o desempenho",
+        "pontuar rubrica",
+        "encerrar com checklist e take-home"
+      ]
+    },
+    {
+      "id": "visual_review_round",
+      "title": "Visual review round",
+      "duration_min": 15,
+      "steps": [
+        "abrir um board ou atlas",
+        "pedir leitura estruturada",
+        "contrastar escolha prudente e perigosa",
+        "ligar ao caso real do dia"
+      ]
+    }
+  ],
+  "feedback_scale": [
+    {
+      "id": "elegante",
+      "score": 3,
+      "summary": "resolve com clareza, proporcao e baixo dano"
+    },
+    {
+      "id": "prudente",
+      "score": 2,
+      "summary": "segura o dano e mantem a direcao clinica"
+    },
+    {
+      "id": "aceitavel",
+      "score": 1,
+      "summary": "nao compromete, mas ainda sobra folga tecnica"
+    },
+    {
+      "id": "precipitado",
+      "score": -1,
+      "summary": "anda rapido demais para o que o caso suporta"
+    },
+    {
+      "id": "desproporcional",
+      "score": -2,
+      "summary": "entrega mais invasao ou risco que o necessario"
+    },
+    {
+      "id": "perigoso",
+      "score": -3,
+      "summary": "amplifica dano ou ignora red flags claras"
+    }
+  ]
+}

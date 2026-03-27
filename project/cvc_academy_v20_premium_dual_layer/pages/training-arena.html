@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Training Arena</title>
+  <link rel="manifest" href="../manifest.json"/>
+  <link rel="stylesheet" href="../styles/site.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand-lockup" href="../index.html"><span class="brand-dot"></span><div><div class="brand-title">CVC Academy</div><div class="brand-sub">Training Arena</div></div></a>
+      <nav class="primary-nav"></nav>
+      <div class="topbar-tools"></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="shell hero-premium-grid">
+        <article class="hero-card hero-flagship">
+          <div class="hero-intro-row"><span class="badge">Training Arena</span><a class="mini-link" href="../data/v20_training_registry.json">Training registry</a></div>
+          <h1>Treino data-driven, com memoria local e preco do erro</h1>
+          <p>Esta arena centraliza o treino serio do bundle. Em vez de micro exercicios soltos, ela costura indicacao, familia, tecnica, confirmacao, complicacao e ensino numa trilha com feedback graduado, taxonomia de falhas e persistencia local.</p>
+          <div class="actions"><a class="button primary" href="dashboard-alpha.html">Voltar ao dashboard</a><a class="button" href="v20-cross-part-cases.html">Casos transversais</a><a class="button ghost" href="modo-professor.html">Modo professor</a></div>
+        </article>
+        <article class="hero-card hero-console">
+          <div class="section-head compact"><div><div class="eyebrow">Prova de produto</div><h2>O que muda aqui</h2></div></div>
+          <div class="stack-list">
+            <div class="stack-item"><strong>Motor unico</strong><span>MCQ, V/F, trap, visual read, multi-step case e OSCE na mesma superficie.</span></div>
+            <div class="stack-item"><strong>Feedback serio</strong><span>Elegante, prudente, aceitavel, precipitado, desproporcional e perigoso.</span></div>
+            <div class="stack-item"><strong>Estado local</strong><span>Tentativas, score, fraquezas recorrentes e retomada ficam neste navegador.</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell dashboard-grid">
+        <article class="panel padded span-4">
+          <div class="section-head compact"><div><div class="eyebrow">Mission control</div><h2>Modulos e modo</h2></div></div>
+          <div class="stack-list" data-training-modules></div>
+          <div class="training-controls">
+            <label class="training-label" for="training-mode">Modo de uso</label>
+            <select id="training-mode" class="input" data-training-mode></select>
+          </div>
+          <div class="actions"><button class="button ghost" type="button" data-training-reset>Resetar memoria local</button></div>
+        </article>
+
+        <article class="panel padded span-8">
+          <div class="section-head"><div><div class="eyebrow">Snapshot local</div><h2>Resumo vivo da arena</h2></div></div>
+          <div data-training-summary></div>
+          <div class="section-head compact"><div><div class="eyebrow">Weak spots</div><h2>Onde o erro esta insistindo</h2></div></div>
+          <div class="stack-list" data-training-weakspots></div>
+        </article>
+
+        <article class="span-8" data-training-stage></article>
+
+        <article class="panel padded span-4">
+          <div class="section-head compact"><div><div class="eyebrow">Historico</div><h2>Ultimas tentativas</h2></div></div>
+          <div class="stack-list" data-training-history></div>
+        </article>
+
+        <article class="panel padded span-12">
+          <div class="section-head"><div><div class="eyebrow">Por que isto importa</div><h2>Arena, nao antologia</h2></div></div>
+          <div class="grid-3">
+            <article class="resource-card"><h3>Decisao antes da tecnica</h3><p>O treino comeca perguntando se o paciente precisa mesmo de acesso e sobe a escada so quando a clinica manda.</p></article>
+            <article class="resource-card"><h3>Erro com custo explicito</h3><p>Resposta ruim nao recebe apenas um X. Ela recebe nome, tipo de falha e preco clinico ou sistemico.</p></article>
+            <article class="resource-card"><h3>Ensino observavel</h3><p>OSCE e debriefing entram na mesma arquitetura, para aproximar aluno, professor e dashboard futuro.</p></article>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell"><div>CVC Academy | Training Arena.</div><div class="footer-links"><a href="dashboard-alpha.html">Dashboard</a><a href="v20-cross-part-cases.html">Casos</a><a href="modo-professor.html">Professor</a></div></footer>
+  <script src="../scripts/search-index.js"></script>
+  <script src="../scripts/site.js"></script>
+  <script src="../scripts/training-arena-data.js"></script>
+  <script src="../scripts/training-arena.js"></script>
+  <script src="../scripts/sw-register.js"></script>
+</body>
+</html>

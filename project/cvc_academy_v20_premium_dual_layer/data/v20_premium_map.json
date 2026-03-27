@@ -1,0 +1,60 @@
+{
+  "version": "v20+",
+  "updated_at": "2026-03-26",
+  "premium_layer": {
+    "entry_surface": "pages/v20-premium-hub.html",
+    "product_role": "transversal review and visual reuse layer",
+    "pillars": [
+      "transversal_review",
+      "visual_review",
+      "multi_step_reasoning",
+      "asset_discovery",
+      "teaching_support"
+    ],
+    "surfaces": [
+      {
+        "id": "premium_hub",
+        "route": "pages/v20-premium-hub.html",
+        "role": "gateway",
+        "maturity": "functional"
+      },
+      {
+        "id": "premium_review",
+        "route": "pages/v20-premium-review.html",
+        "role": "transversal_review",
+        "maturity": "functional"
+      },
+      {
+        "id": "premium_atlas",
+        "route": "pages/v20-premium-atlas.html",
+        "role": "visual_review",
+        "maturity": "functional"
+      },
+      {
+        "id": "cross_part_cases",
+        "route": "pages/v20-cross-part-cases.html",
+        "role": "multi_step_reasoning",
+        "maturity": "functional"
+      },
+      {
+        "id": "graphics_catalog",
+        "route": "pages/v20-graphics-catalog.html",
+        "role": "asset_discovery",
+        "maturity": "functional"
+      },
+      {
+        "id": "teacher_mode",
+        "route": "pages/modo-professor.html",
+        "role": "teaching_support",
+        "maturity": "staged"
+      }
+    ],
+    "dependencies": [
+      "data/v20_surface_registry.json",
+      "data/v20_media_registry_seed.json",
+      "data/v20_case_registry.json",
+      "docs/V20_PREMIUM_UNIFIED.md"
+    ],
+    "notes": "premium is a functional layer above the main series, not a replacement for it"
+  }
+}

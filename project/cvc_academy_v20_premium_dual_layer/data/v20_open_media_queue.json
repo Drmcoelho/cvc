@@ -1,0 +1,104 @@
+{
+  "version": "v20+",
+  "updated_at": "2026-03-26",
+  "policy_doc": "docs/OPEN_MEDIA_SOURCING.md",
+  "license_allowlist": [
+    "public_domain",
+    "CC0-1.0",
+    "CC-BY-4.0",
+    "CC-BY-SA-4.0",
+    "CC-BY-SA-3.0"
+  ],
+  "ingested_seed_batch": [
+    "open_cvc_chest_xray_pd_medical",
+    "open_cvc_procedure_photo_cc_by_sa_4",
+    "open_cvc_set_cc0",
+    "open_picc_device_cc_by_sa_3",
+    "open_port_device_cc_by_sa_3",
+    "open_hd_catheter_cc_by_sa_4",
+    "open_cvc_subclavian_xray_cc_by_sa_3",
+    "open_pneumothorax_xray_cc_by_4"
+  ],
+  "ingested_batch_2": [
+    "open_ijv_ultrasound_narrowing_cc_by_sa_4",
+    "open_ijv_ultrasound_collaterals_cc_by_sa_4",
+    "open_port_azygos_malposition_xray_cc0",
+    "open_central_line_dressing_cc_by_sa_4",
+    "open_central_line_sutures_cc_by_sa_4"
+  ],
+  "ingested_batch_3": [
+    "open_neck_ultrasound_procedural_pd",
+    "open_port_azygos_malposition_lateral_cc0",
+    "open_svc_thrombosis_ct_cc_by_4"
+  ],
+  "ingested_batch_4": [
+    "open_central_vein_catheter_exit_site_cc_by_sa_4",
+    "open_catheter_biofilm_staph_phil_pd",
+    "open_catheter_biofilm_alcaligenes_phil_pd"
+  ],
+  "next_batch": [
+    {
+      "id": "candidate_ultrasound_normal_window_open",
+      "domain": "ultrasound_guidance",
+      "part_targets": [
+        "part4",
+        "part5"
+      ],
+      "priority": "high",
+      "need": "a foto procedural do lote 3 nao substitui um US real com relacao veia-arteria e leitura do ponto de vista do operador",
+      "preferred_sources": [
+        "Wikimedia Commons",
+        "PMC CC-BY"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "candidate_malposition_nonazygos_open",
+      "domain": "imaging_confirmation",
+      "part_targets": [
+        "part5",
+        "part6"
+      ],
+      "priority": "medium",
+      "need": "depois do par AP-lateral em azigos, falta outra malposicao real para comparacao e contraste de trajetoria",
+      "preferred_sources": [
+        "Wikimedia Commons",
+        "PMC CC-BY"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "candidate_visible_exit_site_infection_open",
+      "domain": "complications",
+      "part_targets": [
+        "part6",
+        "part7",
+        "part8"
+      ],
+      "priority": "high",
+      "need": "o lote 4 trouxe biofilme real e sitio de saida, mas ainda falta foto clinica aberta de infeccao visivel em tunel ou sitio de saida",
+      "preferred_sources": [
+        "PMC CC-BY",
+        "Wikimedia Commons",
+        "CDC PHIL"
+      ],
+      "status": "candidate"
+    },
+    {
+      "id": "candidate_maintenance_full_bundle_open",
+      "domain": "maintenance",
+      "part_targets": [
+        "part7",
+        "part9"
+      ],
+      "priority": "medium",
+      "need": "foto real com bundle mais completo, conexoes, rotulo e contexto de manutencao alem do close de curativo",
+      "preferred_sources": [
+        "Wikimedia Commons",
+        "CDC PHIL",
+        "PMC CC-BY"
+      ],
+      "status": "candidate"
+    }
+  ]
+}

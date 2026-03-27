@@ -1,0 +1,97 @@
+{
+  "version": "v20+",
+  "updated_at": "2026-03-26",
+  "cases": [
+    {
+      "id": "case_escalation_trap",
+      "title": "Nao invadir cedo demais",
+      "question": "Dificuldade periferica justifica central agora?",
+      "part_arc": ["part1", "part2", "part3"],
+      "starting_surface": "pages/v20-reality-class-part1.html",
+      "summary": "Paciente com antibiotico, periferico dificil e equipe tentada a escalar cedo demais.",
+      "decision_points": [
+        "definir se a necessidade de acesso invasivo realmente venceu a via oral",
+        "escolher o menor degrau suficiente para a terapia",
+        "nao confundir conforto da equipe com indicacao de familia"
+      ],
+      "tempting_error": "escalar cedo para aliviar a logistica",
+      "cost_of_error": "mais invasividade, mais manutencao e perda de capital venoso sem ganho proporcional",
+      "teacher_prompt": "Qual frase clinica legitima a escalada aqui?",
+      "linked_routes": [
+        "pages/v20-reality-class-part1.html",
+        "pages/v20-reality-class-part2.html",
+        "pages/v20-reality-class-part3.html"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "case_beautiful_puncture_bad_confirmation",
+      "title": "Punccao bonita, confirmacao ruim",
+      "question": "O procedimento terminou mesmo quando a imagem deixou duvida?",
+      "part_arc": ["part4", "part5", "part6"],
+      "starting_surface": "pages/v20-reality-class-part4.html",
+      "summary": "Passagem aparentemente limpa, mas a confirmacao ficou ruim e o contexto anatomico cobrou preco.",
+      "decision_points": [
+        "reconhecer warning tecnico antes de insistir",
+        "interpretar trajeto e ponta com humildade",
+        "agir cedo quando a complicacao entra em cena"
+      ],
+      "tempting_error": "encerrar porque a ponta parece aceitavel",
+      "cost_of_error": "malposicao, dano pleural ou atraso no reconhecimento salvador",
+      "teacher_prompt": "Em que momento o operador deveria ter parado para reavaliar?",
+      "linked_routes": [
+        "pages/v20-reality-class-part4.html",
+        "pages/v20-reality-class-part5.html",
+        "pages/v20-reality-class-part6.html",
+        "pages/dreno-toracico.html"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "case_line_without_reason",
+      "title": "Linha que continua existindo sem motivo",
+      "question": "Quem esta revisando a necessidade diaria do cateter?",
+      "part_arc": ["part6", "part7", "part9"],
+      "starting_surface": "pages/v20-reality-class-part6.html",
+      "summary": "O procedimento acabou, mas a linha segue no paciente sem pergunta diaria clara.",
+      "decision_points": [
+        "reconhecer o custo biologico da manutencao por inercia",
+        "usar rubrica e debriefing para corrigir a cultura da equipe",
+        "decidir remocao em vez de manutencao automatica"
+      ],
+      "tempting_error": "deixar para o proximo plantao porque o acesso ja esta funcionando",
+      "cost_of_error": "infeccao, trombose e naturalizacao do cateter inutil",
+      "teacher_prompt": "Que frase de debriefing desmonta a inercia da equipe sem moralismo?",
+      "linked_routes": [
+        "pages/v20-reality-class-part6.html",
+        "pages/v20-reality-class-part7.html",
+        "pages/v20-reality-class-part9.html",
+        "pages/modo-professor.html"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "case_hostile_territory_replan",
+      "title": "Territorio hostil exige replano",
+      "question": "O melhor sitio em contexto ideal continua sendo o melhor aqui?",
+      "part_arc": ["part2", "part3", "part8", "part9"],
+      "starting_surface": "pages/v20-reality-class-part8.html",
+      "summary": "Paciente com historia vascular ruim, anatomia alterada e necessidade de acesso ainda vigente.",
+      "decision_points": [
+        "recalcular lado e sitio diante do contexto",
+        "reavaliar familia e manutencao futura",
+        "fechar a decisao com checklist integrado e plano diario"
+      ],
+      "tempting_error": "repetir a mesma receita tecnica do territorio facil",
+      "cost_of_error": "mais tentativas, mais dano e escolha ruim de dispositivo",
+      "teacher_prompt": "Que dado do contexto hostil mais mudou sua escolha?",
+      "linked_routes": [
+        "pages/v20-reality-class-part2.html",
+        "pages/v20-reality-class-part3.html",
+        "pages/v20-reality-class-part8.html",
+        "pages/v20-reality-class-part9.html"
+      ],
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Part 7 · Transferência e ensino",
+  "rubric_domains": [
+    "pré-decisão",
+    "execução",
+    "pós-procedimento",
+    "debriefing",
+    "bundle compliance",
+    "comunicação com equipe"
+  ],
+  "use_cases": [
+    "OSCE",
+    "bedside teaching",
+    "microaula",
+    "debriefing pós-erro",
+    "passagem de plantão",
+    "supervisão de novato"
+  ],
+  "observables": [
+    "justificativa do acesso",
+    "explicação anatômica",
+    "manejo do fio-guia",
+    "fixação e curativo",
+    "plano pós-procedimento",
+    "clareza verbal"
+  ],
+  "bundle_table": [
+    {
+      "component": "higiene de mãos",
+      "5_5": "presente antes e depois",
+      "3_5": "irregular ou tardia",
+      "why": "reduz colonização e cascata infecciosa"
+    },
+    {
+      "component": "barreira máxima",
+      "5_5": "campo completo e disciplina",
+      "3_5": "campo quebrado em silêncio",
+      "why": "queda de esterilidade sem dramatização imediata"
+    },
+    {
+      "component": "curativo íntegro",
+      "5_5": "visualiza e protege",
+      "3_5": "descola, esconde ou traciona",
+      "why": "saída ruim vira complicação lenta"
+    },
+    {
+      "component": "necessidade diária",
+      "5_5": "reavaliada",
+      "3_5": "esquecida",
+      "why": "cateter inútil continua cobrando risco"
+    },
+    {
+      "component": "flush/clamps/conectores",
+      "5_5": "rotina padronizada",
+      "3_5": "gambiarra",
+      "why": "disfunção e contaminação gostam de rotina ruim"
+    }
+  ],
+  "cases": [
+    "novato que escolheu central cedo demais",
+    "aluno que executa bem e fixa mal",
+    "equipe que mantém linha inútil por costume"
+  ]
+}

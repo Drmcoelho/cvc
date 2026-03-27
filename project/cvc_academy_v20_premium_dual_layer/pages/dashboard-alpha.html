@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Alpha</title>
+  <link rel="manifest" href="../manifest.json"/>
+  <link rel="stylesheet" href="../styles/site.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand-lockup" href="../index.html"><span class="brand-dot"></span><div><div class="brand-title">CVC Academy</div><div class="brand-sub">Dashboard Alpha</div></div></a>
+      <nav class="primary-nav"></nav>
+      <div class="topbar-tools"></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="shell hero-premium-grid">
+        <article class="hero-card hero-flagship">
+          <div class="hero-intro-row"><span class="badge">Dashboard Alpha</span><a class="mini-link" href="../docs/DASHBOARD_FUTURE.md">Spec viva</a></div>
+          <h1>Painel operacional local do ecossistema</h1>
+          <p>Este alpha nao tenta ser o dashboard final. Ele existe para provar a arquitetura de informacao: por onde estudar, por onde revisar, por onde ensinar, por onde treinar de verdade e agora por onde retomar o proprio estudo sem se perder em ilhas de HTML.</p>
+          <div class="actions"><a class="button primary" href="training-arena.html">Training Arena</a><a class="button" href="v20-alpha-hub.html">Trilha principal</a><a class="button ghost" href="modo-professor.html">Teacher mode</a></div>
+        </article>
+        <article class="hero-card hero-console">
+          <div class="section-head compact"><div><div class="eyebrow">Estado atual do bundle</div><h2>Panorama rapido</h2></div></div>
+          <div class="kpis">
+            <div class="kpi"><strong>39</strong><span>paginas HTML</span></div>
+            <div class="kpi"><strong>17</strong><span>docs locais</span></div>
+            <div class="kpi"><strong>12</strong><span>JSONs ativos</span></div>
+            <div class="kpi"><strong>374</strong><span>assets visuais</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell dashboard-grid">
+        <article class="panel padded span-12">
+          <div class="section-head"><div><div class="eyebrow">Entradas rapidas</div><h2>Escolha a porta certa</h2></div></div>
+          <div class="grid-3">
+            <article class="resource-card"><h3>Treinar de verdade</h3><p>Use a arena quando quiser score local, feedback graduado, OSCE e casos multi-step num unico motor.</p><a class="button primary" href="training-arena.html">Training Arena</a></article>
+            <article class="resource-card"><h3>Comecar do zero</h3><p>Use a serie principal quando quiser respeitar a escada de decisao do inicio ao fim.</p><a class="button primary" href="v20-alpha-hub.html">Hub da serie</a></article>
+            <article class="resource-card"><h3>Revisar com densidade</h3><p>Use premium review, atlas e casos quando o objetivo for costura transversal e reuso visual.</p><a class="button primary" href="v20-premium-hub.html">Premium Hub</a></article>
+            <article class="resource-card"><h3>Preparar ensino</h3><p>Use teacher mode, Part 7 e casos quando o foco for rubrica, bundle e debriefing.</p><a class="button primary" href="modo-professor.html">Modo professor</a></article>
+          </div>
+        </article>
+
+        <article class="panel padded span-6" id="study-cockpit">
+          <div class="section-head"><div><div class="eyebrow">Mega MVP</div><h2>Cockpit local de estudo</h2></div></div>
+          <div data-dashboard-cockpit></div>
+        </article>
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Estado vivo</div><h2>Favoritos, recentes e retomada</h2></div></div>
+          <div data-dashboard-favorites></div>
+        </article>
+        <article class="panel padded span-12">
+          <div class="section-head"><div><div class="eyebrow">Mapa operacional</div><h2>Progresso local por superficie</h2></div></div>
+          <div data-dashboard-map></div>
+        </article>
+
+        <article class="panel padded span-4">
+          <div class="section-head compact"><div><div class="eyebrow">Track</div><h2>Decision before technique</h2></div></div>
+          <p>Parts 1 a 3 e casos de escalada precoce.</p>
+          <div class="reality-nav"><a class="button primary" href="v20-reality-class-part1.html">Part 1</a><a class="button ghost" href="v20-cross-part-cases.html">Caso 1</a></div>
+        </article>
+        <article class="panel padded span-4">
+          <div class="section-head compact"><div><div class="eyebrow">Track</div><h2>Technique, image and damage</h2></div></div>
+          <p>Parts 4 a 6, OSCEs e caso de confirmacao ruim.</p>
+          <div class="reality-nav"><a class="button primary" href="v20-reality-class-part4.html">Part 4</a><a class="button ghost" href="v20-part4-osce.html">OSCE</a></div>
+        </article>
+        <article class="panel padded span-4">
+          <div class="section-head compact"><div><div class="eyebrow">Track</div><h2>Teaching and team culture</h2></div></div>
+          <p>Part 7, teacher mode, revisao integral e cultura de remocao.</p>
+          <div class="reality-nav"><a class="button primary" href="v20-reality-class-part7.html">Part 7</a><a class="button ghost" href="revisao-integral.html">Revisao integral</a></div>
+        </article>
+
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Treino vivo</div><h2>Snapshot local da arena</h2></div></div>
+          <div data-dashboard-training></div>
+        </article>
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Open media pulse</div><h2>Lotes reais que ja puxam treino e ensino</h2></div></div>
+          <div data-dashboard-media></div>
+        </article>
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Revisao superior</div><h2>Camada premium ja conectada</h2></div></div>
+          <div class="stack-list">
+            <div class="stack-item"><strong>Premium Review</strong><span>principios, taxonomia de falha e linguagem de expertise.</span></div>
+            <div class="stack-item"><strong>Premium Atlas</strong><span>assets de alto reuso com ponte para catalogo e metadado.</span></div>
+            <div class="stack-item"><strong>Cross-Part Cases</strong><span>casos multi-step com erro tentador e custo clinico explicito.</span></div>
+          </div>
+          <div class="reality-nav"><a class="button primary" href="v20-premium-review.html">Review</a><a class="button" href="v20-premium-atlas.html">Atlas</a><a class="button ghost" href="v20-cross-part-cases.html">Casos</a></div>
+        </article>
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Governanca</div><h2>Registros que sustentam a proxima casca</h2></div></div>
+          <div class="stack-list">
+            <div class="stack-item"><strong>Surface registry</strong><span><a href="../data/v20_surface_registry.json">data/v20_surface_registry.json</a></span></div>
+            <div class="stack-item"><strong>Media registry</strong><span><a href="../data/v20_media_registry_seed.json">data/v20_media_registry_seed.json</a></span></div>
+            <div class="stack-item"><strong>Open media queue</strong><span><a href="../data/v20_open_media_queue.json">data/v20_open_media_queue.json</a></span></div>
+            <div class="stack-item"><strong>Case registry</strong><span><a href="../data/v20_case_registry.json">data/v20_case_registry.json</a></span></div>
+            <div class="stack-item"><strong>Training registry</strong><span><a href="../data/v20_training_registry.json">data/v20_training_registry.json</a></span></div>
+            <div class="stack-item"><strong>Training runtime</strong><span><a href="../scripts/training-arena-data.js">scripts/training-arena-data.js</a></span></div>
+          </div>
+        </article>
+
+        <article class="panel padded span-12">
+          <div class="section-head"><div><div class="eyebrow">Proxima camada</div><h2>Do alpha para o dashboard maduro</h2></div></div>
+          <div class="grid-3">
+            <article class="resource-card"><h3>Faltam filtros reais</h3><p>Part, surface, dominio e maturidade ainda precisam virar interacao, nao so texto.</p></article>
+            <article class="resource-card"><h3>Estado local virou cockpit</h3><p>Favoritos, concluidos, recentes, retomada e recomendacao ja estao vivos no bundle; o proximo salto e sincronismo entre navegadores e perfis.</p></article>
+            <article class="resource-card"><h3>Treino saiu do esboco</h3><p>A arena ja cruza lote real, par AP-lateral, trombose real, biofilme real e sitio de saida real; o proximo salto e virar filtro pedagogico e trilha adaptativa.</p></article>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell"><div>CVC Academy · Dashboard Alpha.</div><div class="footer-links"><a href="v20-alpha-hub.html">Hub da serie</a><a href="v20-premium-hub.html">Premium</a></div></footer>
+  <script src="../scripts/search-index.js"></script><script src="../scripts/site.js"></script><script src="../scripts/training-arena-data.js"></script><script src="../scripts/dashboard-alpha.js"></script><script src="../scripts/sw-register.js"></script>
+</body>
+</html>

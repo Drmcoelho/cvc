@@ -1,0 +1,44 @@
+{
+  "title": "Part 8 · Continuidade curricular / territórios hostis",
+  "bridges": [
+    "dreno torácico",
+    "complicações",
+    "manutenção",
+    "revisão integral",
+    "modo professor",
+    "decision-lab"
+  ],
+  "hostile_contexts": [
+    "radioterapia prévia",
+    "cirurgia prévia",
+    "obesidade",
+    "coagulopatia",
+    "agitação",
+    "DRC/diálise futura",
+    "infecção local",
+    "anatomia alterada"
+  ],
+  "side_logic": [
+    {
+      "site": "subclávia direita",
+      "good_for": "trajeto mental clássico e menor conversa com ducto torácico",
+      "price": "pleura e espaço torácico punem erro cego"
+    },
+    {
+      "site": "subclávia esquerda",
+      "good_for": "situações selecionadas e anatomia possível",
+      "price": "mais necessidade de humildade anatômica e confirmação"
+    },
+    {
+      "site": "IJ direita",
+      "good_for": "trajeto central amigável e ensino com US depois",
+      "price": "carótida e variação ainda cobram respeito"
+    },
+    {
+      "site": "femoral",
+      "good_for": "compressibilidade e urgência selecionada",
+      "price": "bundle, contaminação e manutenção cobram cedo"
+    }
+  ],
+  "core_message": "território hostil não é desculpa para pular raciocínio; é justamente onde o raciocínio fica mais importante."
+}

@@ -1,0 +1,52 @@
+window.CVC_DATA = {
+  routes: [
+    { slug: "index", title: "Inicio", href: "index.html", group: "Entrada", summary: "Ponto de entrada offline-first da plataforma." },
+    { slug: "v20-alpha-hub", title: "Hub da Serie", href: "pages/v20-alpha-hub.html", group: "Entrada", summary: "Trilha principal Parts 1 a 9." },
+    { slug: "dashboard-alpha", title: "Dashboard Alpha", href: "pages/dashboard-alpha.html", group: "Entrada", summary: "Painel operacional local do ecossistema." },
+    { slug: "training-arena", title: "Training Arena", href: "pages/training-arena.html", group: "Treino", summary: "Motor data-driven de treino com memoria local, taxonomia de falhas e OSCE." },
+    { slug: "v20-premium-hub", title: "Premium Hub", href: "pages/v20-premium-hub.html", group: "Premium", summary: "Porta de entrada da camada premium." },
+    { slug: "v20-premium-review", title: "Premium Review", href: "pages/v20-premium-review.html", group: "Premium", summary: "Revisao transversal do ecossistema." },
+    { slug: "v20-premium-atlas", title: "Premium Atlas", href: "pages/v20-premium-atlas.html", group: "Premium", summary: "Mapa visual concentrado de ativos e comparadores." },
+    { slug: "v20-cross-part-cases", title: "Casos Transversais", href: "pages/v20-cross-part-cases.html", group: "Treino", summary: "Casos multi-step entre decisao, tecnica, imagem e complicacao." },
+    { slug: "v20-graphics-catalog", title: "Catalogo Grafico", href: "pages/v20-graphics-catalog.html", group: "Treino", summary: "Inventario visual de boards, posters, RX e fotos reais com governanca visivel." },
+    { slug: "revisao-integral", title: "Revisao Integral", href: "pages/revisao-integral.html", group: "Revisao", summary: "Mapa de revisao e prioridades por Part." },
+    { slug: "modo-professor", title: "Modo Professor", href: "pages/modo-professor.html", group: "Ensino", summary: "Rubricas, observaveis e estrutura de sessao." },
+    { slug: "dreno-toracico", title: "Ponte para Dreno", href: "pages/dreno-toracico.html", group: "Correlatos", summary: "Extensao para manejo de complicacoes toracicas." },
+    { slug: "v20-reality-class-part1", title: "Part 1 · Antes do CVC", href: "pages/v20-reality-class-part1.html", group: "Serie", summary: "Decisao antes da invasao." },
+    { slug: "v20-reality-class-part2", title: "Part 2 · Escada do acesso", href: "pages/v20-reality-class-part2.html", group: "Serie", summary: "Menor acesso suficiente." },
+    { slug: "v20-reality-class-part3", title: "Part 3 · Dispositivos", href: "pages/v20-reality-class-part3.html", group: "Serie", summary: "Familias de dispositivos." },
+    { slug: "v20-reality-class-part4", title: "Part 4 · Tecnica viva", href: "pages/v20-reality-class-part4.html", group: "Serie", summary: "Execucao, gesto e seguranca." },
+    { slug: "v20-reality-class-part5", title: "Part 5 · Imagem e confirmacao", href: "pages/v20-reality-class-part5.html", group: "Serie", summary: "US, RX, trajeto e ponta." },
+    { slug: "v20-reality-class-part6", title: "Part 6 · Complicacoes", href: "pages/v20-reality-class-part6.html", group: "Serie", summary: "Preco do erro e conduta." },
+    { slug: "v20-reality-class-part7", title: "Part 7 · Transferencia e ensino", href: "pages/v20-reality-class-part7.html", group: "Serie", summary: "Ensino, bundle e debriefing." },
+    { slug: "v20-reality-class-part8", title: "Part 8 · Continuidade e hostis", href: "pages/v20-reality-class-part8.html", group: "Serie", summary: "Territorios hostis e adaptacao." },
+    { slug: "v20-reality-class-part9", title: "Part 9 · Checklist integrado", href: "pages/v20-reality-class-part9.html", group: "Serie", summary: "Fechamento operacional da jornada." },
+    { slug: "v20-part1-masterclass", title: "Part 1 Masterclass", href: "pages/v20-part1-masterclass.html", group: "Overkill", summary: "Decisao de acesso em nivel ampliado." },
+    { slug: "v20-part1-exercises", title: "Part 1 Exercicios", href: "pages/v20-part1-exercises.html", group: "Overkill", summary: "MCQ, V/F e pegadinhas de indicacao." },
+    { slug: "v20-part1-code-lab", title: "Part 1 Code Lab", href: "pages/v20-part1-code-lab.html", group: "Overkill", summary: "Algoritmo de decisao antes da invasao." },
+    { slug: "v20-part2-masterclass", title: "Part 2 Masterclass", href: "pages/v20-part2-masterclass.html", group: "Overkill", summary: "Escada do acesso em profundidade." },
+    { slug: "v20-part2-exercises", title: "Part 2 Exercicios", href: "pages/v20-part2-exercises.html", group: "Overkill", summary: "Treino objetivo da Part 2." },
+    { slug: "v20-part2-code-lab", title: "Part 2 Code Lab", href: "pages/v20-part2-code-lab.html", group: "Overkill", summary: "Logica procedural da escalada." },
+    { slug: "v20-part3-masterclass", title: "Part 3 Masterclass", href: "pages/v20-part3-masterclass.html", group: "Overkill", summary: "Dispositivos em profundidade." },
+    { slug: "v20-part3-exercises", title: "Part 3 Exercicios", href: "pages/v20-part3-exercises.html", group: "Overkill", summary: "Treino objetivo da Part 3." },
+    { slug: "v20-part3-code-lab", title: "Part 3 Code Lab", href: "pages/v20-part3-code-lab.html", group: "Overkill", summary: "Logica de escolha de familias." },
+    { slug: "v20-part3-atlas", title: "Part 3 Atlas", href: "pages/v20-part3-atlas.html", group: "Atlas", summary: "Atlas de dispositivos." },
+    { slug: "v20-part4-masterclass", title: "Part 4 Masterclass", href: "pages/v20-part4-masterclass.html", group: "Overkill", summary: "Tecnica viva em profundidade." },
+    { slug: "v20-part4-exercises", title: "Part 4 Exercicios", href: "pages/v20-part4-exercises.html", group: "Overkill", summary: "Treino objetivo da Part 4." },
+    { slug: "v20-part4-code-lab", title: "Part 4 Code Lab", href: "pages/v20-part4-code-lab.html", group: "Overkill", summary: "Fluxos e troubleshooting da Part 4." },
+    { slug: "v20-part4-osce", title: "Part 4 OSCE", href: "pages/v20-part4-osce.html", group: "Overkill", summary: "OSCE e checklists da Part 4." },
+    { slug: "v20-part5-masterclass", title: "Part 5 Masterclass", href: "pages/v20-part5-masterclass.html", group: "Overkill", summary: "Imagem e confirmacao em profundidade." },
+    { slug: "v20-part5-exercises", title: "Part 5 Exercicios", href: "pages/v20-part5-exercises.html", group: "Overkill", summary: "Treino objetivo da Part 5." },
+    { slug: "v20-part5-code-lab", title: "Part 5 Code Lab", href: "pages/v20-part5-code-lab.html", group: "Overkill", summary: "Fluxos de confirmacao e leitura de imagem." },
+    { slug: "v20-part5-atlas", title: "Part 5 Atlas", href: "pages/v20-part5-atlas.html", group: "Atlas", summary: "Atlas de imagem e confirmacao." },
+    { slug: "v20-part5-osce", title: "Part 5 OSCE", href: "pages/v20-part5-osce.html", group: "Overkill", summary: "OSCE e artefatos da Part 5." }
+  ]
+};
+
+window.CVC_DATA.searchIndex = window.CVC_DATA.routes.map((route) => ({
+  title: route.title,
+  href: route.href,
+  group: route.group,
+  text: route.summary,
+  tags: [route.group.toLowerCase(), route.slug.replaceAll("-", " ")]
+}));
