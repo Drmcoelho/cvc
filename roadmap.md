@@ -187,6 +187,7 @@ O tronco tecnico do pacote foi recomposto, mas a camada editorial, o metadado e 
 - o lote 2 ja cobre US real, malposicao real e manutencao real dentro do proprio bundle
 - o lote 3 ja cobre foto procedural real de US, par AP-lateral de malposicao e CT real de trombose dentro do proprio bundle
 - o lote 4 ja cobre sitio de saida real, biofilme real por staph e biofilme real com Alcaligenes dentro do proprio bundle
+- as masterclasses das Parts 2, 3 e 5 tambem ja sairam do modo "overkill de esquema" e passaram a abrir com ancoras reais, comparacao pratica e preco clinico visivel
 
 ## Fase 2: enriquecimento interno imediato
 

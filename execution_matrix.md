@@ -147,6 +147,10 @@ Ela existe para responder:
 
 ## Gate de progresso
 
+Nota de estado atual:
+
+- as masterclasses das Parts 2, 3 e 5 ja deixaram de ser superfícies dominadas por SVG e agora usam ancoras reais como base de ensino; a densificacao futura mais critica ficou concentrada nas Parts 1, 6, 7, 8 e 9 e na camada de plataforma
+
 ### Gate 1: pacote honesto
 
 - A1, A2 e A5 concluidos

@@ -350,6 +350,7 @@ Lotes 2, 3 e 4 da midia real aberta agora presentes no proprio bundle:
 - foto real de sitio de saida de cateter
 - biofilme real de cateter por staph
 - biofilme real com Alcaligenes e material fibrinoide
+- Parts 2, 3 e 5 agora tambem tiveram suas masterclasses puxadas para a mesma logica de `real first`, reduzindo a dependencia de mural de SVGs e reforcando dispositivo, imagem e custo biologico no mundo real
 
 ## O que ja esta claro no material
 

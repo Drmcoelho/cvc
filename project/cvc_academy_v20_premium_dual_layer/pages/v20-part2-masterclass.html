@@ -1,12 +1,334 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>V20 Part 2 Masterclass</title><link rel="manifest" href="../manifest.json"/><link rel="stylesheet" href="../styles/site.css"/><style>.choice-btn{display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;border-radius:12px;border:1px solid #cbd5e1;background:#f8fafc;cursor:pointer}.feedback{display:none;margin-top:10px;padding:12px 14px;border-radius:12px;background:#eff6ff;border:1px solid #bfdbfe}</style></head><body><header class="topbar"><div class="shell"><a class="brand-lockup" href="../index.html"><span class="brand-dot"></span><div><div class="brand-title">CVC Academy</div><div class="brand-sub">V20 Beta 2 · Part 2 Overkill</div></div></a><nav class="primary-nav"></nav><div class="topbar-tools"></div></div></header><main><section class="hero hero-premium"><div class="shell hero-premium-grid"><article class="hero-card hero-flagship"><div class="hero-intro-row"><span class="badge">Part 2 Masterclass</span><a class="mini-link" href="../docs/V20_PART2_BOOST_MASTER.md">Abrir plano</a></div><h1>Escada do Acesso — versão overkill</h1><p>Segunda de cinco partes do aprofundamento: mais mídia, mais comparadores, mais MCQs, mais pegadinhas e mais algoritmos para o aluno parar de escalar como quem joga dado.</p><div class="actions"><a class="button primary" href="#mapa">Mapa</a><a class="button" href="#formats">Formatos</a><a class="button ghost" href="v20-part2-exercises.html">Exercícios</a></div></article><article class="hero-card hero-console"><div class="section-head compact"><div><div class="eyebrow">Escopo</div><h2>Quintuplicar o Part 2</h2></div></div><div class="stats-grid"><div class="stat-card"><strong>25</strong><span>SVGS teóricos</span></div><div class="stat-card"><strong>28</strong><span>SVGS de questão</span></div><div class="stat-card"><strong>8</strong><span>posters novos</span></div><div class="stat-card"><strong>8</strong><span>fundos novos</span></div></div></article></div></section><section class="section"><div class="shell dashboard-grid"><article class="panel padded span-12" id="mapa"><div class="section-head"><div><div class="eyebrow">Mapa visual</div><h2>O que o aluno precisa ver ao subir ou não subir de degrau</h2></div></div><div class="grid-3"><figure><img src="../assets/v20_part2_boost/theory_svgs/ladder_hero.svg" alt="ladder hero"/><figcaption>Hero da escada.</figcaption></figure><figure><img src="../assets/v20_part2_boost/theory_svgs/device_duration_panel.svg" alt="device duration"/><figcaption>Duração → dispositivo.</figcaption></figure><figure><img src="../assets/v20_part2_boost/theory_svgs/escalation_cost_panel.svg" alt="escalation cost"/><figcaption>Custo da escalada.</figcaption></figure><figure><img src="../assets/v20_part2_boost/theory_svgs/ij_vs_femoral_panel.svg" alt="ij vs femoral"/><figcaption>IJ vs femoral.</figcaption></figure><figure><img src="../assets/v20_part2_boost/theory_svgs/picc_vs_port_panel.svg" alt="picc vs port"/><figcaption>PICC vs port.</figcaption></figure><figure><img src="../assets/v20_part2_boost/theory_svgs/ladder_rule_1.svg" alt="rule1"/><figcaption>Regra 1 da escada.</figcaption></figure></div></article><article class="panel padded span-12" id="formats"><div class="section-head"><div><div class="eyebrow">Formatos já prontos</div><h2>Como estudar a escada</h2></div></div><div class="grid-4"><article class="resource-card"><h3>MCQs</h3><p class="muted">Qual degrau resolve sem exagero?</p><a class="button primary" href="v20-part2-exercises.html#mcq">Abrir</a></article><article class="resource-card"><h3>V/F</h3><p class="muted">Famílias e equivalências falsas.</p><a class="button primary" href="v20-part2-exercises.html#vf">Abrir</a></article><article class="resource-card"><h3>Pegadinhas & charadas</h3><p class="muted">Onde o aluno confunde sítio com dispositivo.</p><a class="button primary" href="v20-part2-exercises.html#pegadinhas">Abrir</a></article><article class="resource-card"><h3>Code Lab</h3><p class="muted">O algoritmo do menor acesso suficiente.</p><a class="button primary" href="v20-part2-code-lab.html">Abrir</a></article></div></article></div></section></main><footer class="footer shell"><div>CVC Academy · V20 Beta 2 · Part 2 overkill.</div><div class="footer-links"><a href="v20-reality-class-part2.html">Part 2 base</a><a href="v20-graphics-catalog.html">Graphics catalog</a></div></footer><script src="../scripts/search-index.js"></script>
-<script src="../scripts/stage8-data.js"></script>
-<script src="../scripts/stage13-data.js"></script>
-<script src="../scripts/stage14-data.js"></script>
-<script src="../scripts/stage15-data.js"></script>
-<script src="../scripts/stage16-data.js"></script>
-<script src="../scripts/stage17-data.js"></script>
-<script src="../scripts/stage18-data.js"></script>
-<script src="../scripts/stage20-data.js"></script>
-<script src="../scripts/sw-register.js"></script>
-<script src="../scripts/site.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>V20 Part 2 Masterclass</title>
+  <link rel="manifest" href="../manifest.json"/>
+  <link rel="stylesheet" href="../styles/site.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand-lockup" href="../index.html">
+        <span class="brand-dot"></span>
+        <div>
+          <div class="brand-title">CVC Academy</div>
+          <div class="brand-sub">V20 Beta 2 - Part 2 Masterclass</div>
+        </div>
+      </a>
+      <nav class="primary-nav"></nav>
+      <div class="topbar-tools"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="shell hero-premium-grid">
+        <article class="hero-card hero-flagship">
+          <div class="hero-intro-row">
+            <span class="badge">Part 2 Masterclass</span>
+            <a class="mini-link" href="v20-reality-class-part2.html">Serie base</a>
+          </div>
+          <h1>Escada do acesso com ancora em dispositivo real</h1>
+          <p>A pergunta nao abre em SVG nem em board. Abre em foto real: que familia esta na frente, o que ela compra, o que ela cobra e por que o degrau anterior talvez ainda fosse suficiente.</p>
+          <div class="tag-row">
+            <span class="tag">real assets first</span>
+            <span class="tag">access ladder</span>
+            <span class="tag">derived boards second</span>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="#ancoras">Ancoras reais</a>
+            <a class="button" href="#escada">Escada</a>
+            <a class="button ghost" href="#boards">Boards depois</a>
+          </div>
+        </article>
+
+        <article class="hero-card hero-console">
+          <div class="section-head compact">
+            <div>
+              <div class="eyebrow">Regra da pagina</div>
+              <h2>Primeiro nomear o dispositivo, depois discutir a subida</h2>
+            </div>
+          </div>
+          <div class="stack-list">
+            <div class="stack-item">
+              <strong>PICC nao e CVC agudo pelo braco</strong>
+              <span>Tem horizonte, manutencao e custo de escolha proprios.</span>
+            </div>
+            <div class="stack-item">
+              <strong>Port nao e o proximo degrau do plantao</strong>
+              <span>E um ramo longitudinal implantavel, nao uma resposta para pressa aguda.</span>
+            </div>
+            <div class="stack-item">
+              <strong>Todo degrau maior herda preco biologico</strong>
+              <span>Campo, puncao, confirmacao, curativo, infeccao e remocao entram junto.</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="ancoras">
+      <div class="shell dashboard-grid">
+        <article class="panel padded span-8">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Ancoras reais</div>
+              <h2>O aluno precisa ver a familia antes de ouvir o comparador</h2>
+            </div>
+          </div>
+          <div class="gallery two">
+            <figure>
+              <img class="full-media" src="../assets/real/open/cvc/central_venous_catheter_set_wikimedia.jpg" alt="Central venous catheter set"/>
+              <figcaption><strong>Kit real de CVC agudo.</strong> A foto lembra que escalar para pescoco ou torax significa comprar campo, fio, dilatacao, confirmacao e dano potencial.</figcaption>
+            </figure>
+            <figure>
+              <img class="full-media" src="../assets/real/open/picc/picc_line_wikimedia.jpg" alt="PICC line"/>
+              <figcaption><strong>PICC real.</strong> Bom para discutir terapia mais longa, centralidade pelo braco e manutencao propria sem colapsar tudo em "central".</figcaption>
+            </figure>
+            <figure>
+              <img class="full-media" src="../assets/real/open/port/pac_with_gripper_wikimedia.jpg" alt="Port with gripper needle"/>
+              <figcaption><strong>Port real com gripper.</strong> Mostra um dispositivo implantavel para uso intermitente prolongado, e nao um degrau de resgate do CTI.</figcaption>
+            </figure>
+            <figure>
+              <img class="full-media" src="../assets/real/open/hemodialysis/temporary_hemodialysis_catheter_wikimedia.jpg" alt="Temporary hemodialysis catheter"/>
+              <figcaption><strong>HD temporario real.</strong> Alto fluxo, finalidade propria e custo biologico diferente de um CVC comum.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="panel padded span-4">
+          <figure>
+            <img class="full-media" src="../assets/real/open/cvc/healthcare_worker_cvc_wikimedia.jpg" alt="Healthcare worker performing central venous catheterisation"/>
+            <figcaption><strong>Procedimento real.</strong> Toda vez que a escada sobe, alguem precisa montar campo, puncionar, guiar, confirmar e depois manter.</figcaption>
+          </figure>
+          <div class="section-head compact">
+            <div>
+              <div class="eyebrow">Como ler as fotos</div>
+              <h2>Tres perguntas para cada ancora</h2>
+            </div>
+          </div>
+          <ul class="reality-list">
+            <li><strong>Qual problema esta sendo resolvido?</strong> Duracao, irritacao da infusao, fluxo ou uso intermitente longitudinal.</li>
+            <li><strong>O degrau anterior falhou de verdade?</strong> Nao vale subir so porque a periferia deu trabalho.</li>
+            <li><strong>Quem vai pagar a manutencao?</strong> O procedimento acaba, mas o cateter continua cobrando todos os dias.</li>
+          </ul>
+          <div class="actions">
+            <a class="button primary" href="v20-part2-exercises.html">Exercicios</a>
+            <a class="button ghost" href="v20-reality-class-part3.html">Part 3</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="escada">
+      <div class="shell dashboard-grid">
+        <article class="panel padded span-12">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Escada aplicada</div>
+              <h2>As ancoras reais reorganizam a conversa do menor acesso suficiente</h2>
+            </div>
+          </div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Degrau ou ramo</th>
+                  <th>Quando entra na conversa</th>
+                  <th>O que compra</th>
+                  <th>Por que nao pode virar reflexo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Periferico comum</strong><br/>Default enquanto entrega a terapia.</td>
+                  <td>Terapia curta, nao irritante, sem necessidade de fluxo ou centralidade.</td>
+                  <td>Menor invasao e menor custo biologico.</td>
+                  <td>Dificuldade de puncao isolada nao justifica pular direto para um central.</td>
+                </tr>
+                <tr>
+                  <td><strong>PICC</strong><br/>Degrau de duracao e manutencao.</td>
+                  <td>Quando o horizonte cresce e a equipe precisa centralidade pelo braco com plano de permanencia.</td>
+                  <td>Menos repeticao de puncoes e um dispositivo com identidade longitudinal mais clara.</td>
+                  <td>Nao resolve choque, nao substitui alto fluxo e cobra manutencao diaria competente.</td>
+                </tr>
+                <tr>
+                  <td><strong>CVC agudo</strong><br/>Degrau de urgencia e centralidade imediata.</td>
+                  <td>Vasoativo, multiplas infusoes criticas, hemodinamica ruim ou contexto que exige acesso central agora.</td>
+                  <td>Rapidez, fluxo adequado e acesso central em territorio agudo.</td>
+                  <td>Compra risco mecanico, confirmacao de trajeto e um bundle de manutencao que comeca no minuto zero.</td>
+                </tr>
+                <tr>
+                  <td><strong>HD temporario</strong><br/>Degrau de alto fluxo.</td>
+                  <td>Dialise aguda ou terapia extracorporea em que um CVC comum simplesmente nao entrega.</td>
+                  <td>Luz, calibre e performance para a finalidade renal.</td>
+                  <td>Nao e "um central grandao". Se a indicacao nao e alto fluxo, o dispositivo esta errado.</td>
+                </tr>
+                <tr>
+                  <td><strong>Port implantavel</strong><br/>Ramo longitudinal, nao degrau agudo.</td>
+                  <td>Terapia intermitente prolongada, ambulatorial, com objetivo de baixa exposicao cutanea.</td>
+                  <td>Vida fora do leito com dispositivo implantado e acesso por Huber quando necessario.</td>
+                  <td>Nao entra para resgatar plantao ruim nem para substituir um central agudo em contexto instavel.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="panel padded span-6">
+          <div class="section-head compact">
+            <div>
+              <div class="eyebrow">Perguntas antes de subir</div>
+              <h2>O check mental desta masterclass</h2>
+            </div>
+          </div>
+          <div class="stack-list">
+            <div class="stack-item">
+              <strong>Duracao</strong>
+              <span>Estou resolvendo horas, dias ou semanas?</span>
+            </div>
+            <div class="stack-item">
+              <strong>Infusao</strong>
+              <span>O que vai entrar precisa mesmo de centralidade, alto fluxo ou confiabilidade maior?</span>
+            </div>
+            <div class="stack-item">
+              <strong>Contexto</strong>
+              <span>Urgencia real ou apenas cansaco da periferia?</span>
+            </div>
+            <div class="stack-item">
+              <strong>Fechamento</strong>
+              <span>Quem vai revisar necessidade, curativo, fixacao e remocao depois?</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel padded span-6">
+          <div class="section-head compact">
+            <div>
+              <div class="eyebrow">Erros que a pagina quer matar</div>
+              <h2>Confusoes classicas quando o material abre abstrato demais</h2>
+            </div>
+          </div>
+          <div class="callout danger">
+            <ul>
+              <li>chamar PICC, port, CVC agudo e HD de variacoes do mesmo objeto</li>
+              <li>tratar port como "PICC premium" e nao como familia implantavel</li>
+              <li>usar CVC como compensacao para uma periferia trabalhosa, sem indicar por necessidade clinica</li>
+              <li>esquecer que HD temporario responde a outra pergunta: alto fluxo</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="preco">
+      <div class="shell dashboard-grid">
+        <article class="panel padded span-12">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Preco da escalada</div>
+              <h2>As imagens reais de manutencao e dano impedem a escada de parecer neutra</h2>
+            </div>
+          </div>
+          <div class="gallery two">
+            <figure>
+              <img class="full-media" src="../assets/real/open/maintenance/central_vein_catheter_entry_site_wikimedia.jpg" alt="Central vein catheter exit site"/>
+              <figcaption><strong>Exit site real.</strong> Escolher um degrau maior tambem e comprar inspeccao diaria de pele, trajeto e necessidade.</figcaption>
+            </figure>
+            <figure>
+              <img class="full-media" src="../assets/real/open/maintenance/central_vein_line_dressing_wikimedia.jpg" alt="Central vein line dressing"/>
+              <figcaption><strong>Curativo real.</strong> O aluno precisa ligar a decisao inicial ao bundle que vai manter ou derrubar aquela linha.</figcaption>
+            </figure>
+            <figure>
+              <img class="full-media" src="../assets/real/open/complication/chest_xray_pneumothorax_wikimedia.png" alt="Chest xray of pneumothorax"/>
+              <figcaption><strong>Pneumotorax real.</strong> O risco mecanico nao cabe num icone simpatico. Faz parte do preco de subir cedo demais.</figcaption>
+            </figure>
+            <figure>
+              <img class="full-media" src="../assets/real/open/infection/catheter_biofilm_staph_phil_7486.jpg" alt="Staphylococcal biofilm on catheter"/>
+              <figcaption><strong>Biofilme real.</strong> Cateter mantido sem motivo vira superficie colonizada, e a escada passa a cobrar juros.</figcaption>
+            </figure>
+          </div>
+          <div class="actions">
+            <a class="button primary" href="v20-cross-part-cases.html">Casos transversais</a>
+            <a class="button" href="v20-premium-review.html">Review premium</a>
+            <a class="button ghost" href="v20-reality-class-part7.html">Part 7</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="boards">
+      <div class="shell dashboard-grid">
+        <article class="panel padded span-12">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Boards derivados</div>
+              <h2>So agora o derivado ajuda: ele comprime o que a foto real ja ensinou</h2>
+            </div>
+          </div>
+          <p>Depois de ver familias, procedimento, manutencao e dano, os boards param de dominar a pagina e passam a servir ao estudo. Eles resumem, comparam e puxam exercicio sem sequestrar o primeiro contato clinico.</p>
+          <div class="gallery two">
+            <figure>
+              <img class="full-media" src="../assets/real/derived/v20_question_arsenal_board.jpg" alt="Question arsenal board"/>
+              <figcaption><strong>Question arsenal board.</strong> Funciona melhor depois das ancoras reais para transformar dispositivo e degrau em MCQ, debriefing e OSCE.</figcaption>
+            </figure>
+            <figure>
+              <img class="full-media" src="../assets/real/derived/maintenance_bundles_board.jpg" alt="Maintenance bundles board"/>
+              <figcaption><strong>Maintenance bundles board.</strong> Resume o que o olho ja viu em sitio, curativo e fixacao, em vez de fingir que bundle existe sozinho.</figcaption>
+            </figure>
+            <figure>
+              <img class="full-media" src="../assets/real/derived/hostile_territories_board.jpg" alt="Hostile territories board"/>
+              <figcaption><strong>Hostile territories board.</strong> Entra como segundo passo para lembrar que nem toda veia aceita insistencia so porque o acesso escalou.</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="panel padded span-12">
+          <div class="section-head">
+            <div>
+              <div class="eyebrow">Proximos passos</div>
+              <h2>Use a pagina certa para o tipo certo de trabalho</h2>
+            </div>
+          </div>
+          <div class="grid-4">
+            <article class="resource-card">
+              <h3>Serie base</h3>
+              <p>Volte para a narrativa mais enxuta da escada do acesso.</p>
+              <a class="button primary" href="v20-reality-class-part2.html">Abrir base</a>
+            </article>
+            <article class="resource-card">
+              <h3>Exercicios</h3>
+              <p>Teste se a subida de degrau foi justificada sem misturar familias.</p>
+              <a class="button primary" href="v20-part2-exercises.html">Abrir exercicios</a>
+            </article>
+            <article class="resource-card">
+              <h3>Part 3</h3>
+              <p>A partir daqui a conversa aprofunda identidade de familia e manutencao.</p>
+              <a class="button primary" href="v20-reality-class-part3.html">Abrir Part 3</a>
+            </article>
+            <article class="resource-card">
+              <h3>Catalogo grafico</h3>
+              <p>Quando o trabalho virar asset registry, licenca e rastreio editorial.</p>
+              <a class="button primary" href="v20-graphics-catalog.html">Abrir catalogo</a>
+            </article>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <div>CVC Academy - V20 Beta 2 - Part 2 Masterclass.</div>
+    <div class="footer-links">
+      <a href="v20-reality-class-part2.html">Part 2 base</a>
+      <a href="v20-graphics-catalog.html">Graphics catalog</a>
+    </div>
+  </footer>
+
+  <script src="../scripts/search-index.js"></script>
+  <script src="../scripts/sw-register.js"></script>
+  <script src="../scripts/site.js"></script>
+</body>
+</html>

@@ -192,6 +192,7 @@ Com base em `project/cvc_academy_v20_premium_dual_layer`:
 - existem 17 docs, 12 JSONs, 374 assets e 14 scripts locais de suporte
 - Parts 1 a 9 ja possuem reality class
 - Parts 1 a 5 possuem overkills em varios formatos, com maior densidade nas Parts 2 a 5
+- as masterclasses das Parts 2, 3 e 5 agora ja estao mais alinhadas ao tronco visual atual, abrindo com midia e hardware reais antes de boards derivados
 - premium hub, premium review e premium atlas deixaram de ser placeholder e viraram superficies funcionais iniciais
 - alpha hub, dashboard alpha, training arena, cross-part cases, graphics catalog, revisao integral e modo professor ja existem no bundle, com casos, treino, estado local, catalogo e lote real aberto em nivel mais governado
 - o pacote base voltou a ter `manifest.json`, `styles/site.css`, `scripts/`, `sw.js` e icones locais
