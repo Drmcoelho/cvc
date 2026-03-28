@@ -7,7 +7,13 @@ Agora existem duas portas de entrada humanas na raiz do workspace:
 1. `index.html`
 2. `dashboard.zsh`
 
+E agora existe tambem uma terceira superficie planejada para publicacao:
+
+3. `GitHub Pages`
+
 Elas existem para duas validacoes diferentes.
+
+O `GitHub Pages` entra como espelho online do bundle canonico, nao como substituto do fluxo local.
 
 ## Quando usar `index.html`
 
@@ -133,3 +139,5 @@ No estado atual, o bundle canonico deve responder com:
 Para revisao editorial rapida, `index.html` basta.
 
 Para revisao funcional de produto, use `dashboard.zsh`.
+
+Para validacao publica em URL real, use o fluxo documentado em `GITHUB_PAGES.md`.

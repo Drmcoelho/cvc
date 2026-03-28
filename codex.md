@@ -394,6 +394,17 @@ Pontos principais:
 7. Nao planejar Mac/iOS como reescrita total; planejar como evolucao da base canonica.
 8. Nao aceitar conteudo que soe generico, superficial ou "papagaiado".
 
+## Regra de publicacao web
+
+Se houver superficie online publica, a regra operacional e:
+
+- publicar apenas o bundle canonico `project/cvc_academy_v20_premium_dual_layer/`
+- nao publicar a raiz inteira do repositorio
+- usar `GitHub Actions` para `GitHub Pages`, nao `Deploy from a branch` na raiz
+- manter caminhos relativos para preservar compatibilidade entre `file://`, HTTP local e Pages
+- manter `archive/`, `reference/`, `tools/` e docs operacionais fora do artefato publicado
+- tratar o Pages como espelho online do bundle, nao como nova fonte de verdade
+
 ## Prioridade tecnica imediata
 
 Se alguem for retomar o trabalho agora, a ordem correta e:

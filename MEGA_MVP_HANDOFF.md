@@ -50,6 +50,13 @@ Checks ja fechados:
 - `TESTAR_CVC_LOCAL.command`
 - `tools/smoke_test_bundle.py`
 
+### Fluxo online via GitHub Pages
+
+- `.github/workflows/pages.yml`
+- `GITHUB_PAGES.md`
+- publica apenas `project/cvc_academy_v20_premium_dual_layer`
+- mantem o bundle local como fonte canonica
+
 ## O que vale testar agora
 
 ### Pelo `index.html`
@@ -164,6 +171,17 @@ Ainda falta costura mais profunda por metadado:
 - puxar recomendacoes docentes para o dashboard
 - transformar treino em trilha adaptativa
 
+### 8. Publicacao publica e observabilidade basica
+
+O deploy para `GitHub Pages` agora esta preparado, mas ainda faltam camadas de operacao real:
+
+- configurar o remoto oficial
+- publicar `main`
+- ativar `Settings > Pages > GitHub Actions`
+- validar a URL publica final
+- decidir se havera dominio proprio
+- decidir se havera analytics ou zero telemetria
+
 ## Como interpretar o estado atual
 
 Este workspace ja deixou de ser prototipo cenografico.
@@ -172,6 +190,7 @@ Hoje ele ja e:
 - bundle web local funcional
 - produto estudavel
 - cockpit de estudo inicial
+- bundle apto para `GitHub Pages`
 - base valida para evolucao multiplataforma
 
 Mas ainda nao e:

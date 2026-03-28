@@ -1,0 +1,51 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/pages.yml
+      - GITHUB_PAGES.md
+      - project/cvc_academy_v20_premium_dual_layer/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Verify published bundle
+        run: |
+          test -f project/cvc_academy_v20_premium_dual_layer/index.html
+          test -f project/cvc_academy_v20_premium_dual_layer/404.html
+          test -f project/cvc_academy_v20_premium_dual_layer/manifest.json
+          test -f project/cvc_academy_v20_premium_dual_layer/sw.js
+          test -f project/cvc_academy_v20_premium_dual_layer/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: project/cvc_academy_v20_premium_dual_layer
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
