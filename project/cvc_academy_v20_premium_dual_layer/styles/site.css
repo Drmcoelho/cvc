@@ -234,10 +234,11 @@ figcaption { color: var(--muted); font-size: .9rem; padding-top: 10px; line-heig
 .panel h2, .panel h3, .section-card h2, .track-card h3, .group-block h3, .mini-card h3 { margin-top: 0; }
 
 /* ── Grids ─────────────────────────────────────────────────────── */
-.stats-grid, .schools-grid, .grid-3, .path-grid, .home-grid, .glossary-grid, .flash-grid, .video-grid, .three-cards, .gallery.three, .related-grid {
+.stats-grid, .schools-grid, .grid-3, .grid-4, .path-grid, .home-grid, .glossary-grid, .flash-grid, .video-grid, .three-cards, .gallery.three, .related-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
 }
 .stats-grid { grid-template-columns: repeat(4, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
 .schools-grid { grid-template-columns: repeat(2, 1fr); }
 
 /* ── School Cards ──────────────────────────────────────────────── */
@@ -961,7 +962,7 @@ body.modal-open { overflow: hidden; }
   .sidebar { position: relative; top: auto; }
 }
 @media (max-width: 920px) {
-  .schools-grid, .console-grid, .grid-3, .glossary-grid, .flash-grid, .three-cards, .related-grid, .group-grid, .two-cards, .gallery.two, .video-grid, .matrix-grid, .training-media-grid { grid-template-columns: 1fr; }
+  .schools-grid, .console-grid, .grid-3, .grid-4, .glossary-grid, .flash-grid, .three-cards, .related-grid, .group-grid, .two-cards, .gallery.two, .video-grid, .matrix-grid, .training-media-grid { grid-template-columns: 1fr; }
   .stats-grid, .kpis { grid-template-columns: 1fr 1fr; }
   .topbar .shell { flex-direction: column; align-items: flex-start; }
   .topbar-tools { margin-left: 0; width: 100%; }

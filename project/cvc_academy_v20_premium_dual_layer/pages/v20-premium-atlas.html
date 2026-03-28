@@ -19,84 +19,133 @@
     <section class="hero">
       <div class="shell hero-premium-grid">
         <article class="hero-card hero-flagship">
-          <div class="hero-intro-row"><span class="badge">Premium Atlas</span><a class="mini-link" href="../data/v20_media_registry_seed.json">Media registry</a></div>
-          <h1>Mapa visual concentrado do ecossistema</h1>
-          <p>Esta superficie existe para revisao rapida e reuso intencional. Cada asset importante aparece aqui com dominio, Parts alvo e rotas naturais de reaproveitamento, inclusive o novo lote de midia real aberta.</p>
-          <div class="actions"><a class="button primary" href="v20-graphics-catalog.html#open-real-batch">Lote real</a><a class="button" href="v20-premium-review.html">Review</a><a class="button ghost" href="../docs/OPEN_MEDIA_SOURCING.md">Licencas</a></div>
+          <div class="hero-intro-row"><span class="badge">Premium Atlas</span><a class="mini-link" href="v20-graphics-catalog.html">Catalogo grafico</a></div>
+          <h1>Midia clinica real primeiro, board derivado depois</h1>
+          <p>O atlas premium agora funciona como revisao visual rapida guiada pela pergunta clinica. Primeiro ver dispositivo, imagem, manutencao e dano em midia real; depois usar boards derivados para comprimir o raciocinio e acelerar reuso.</p>
+          <div class="tag-row"><span class="tag">clinical question first</span><span class="tag">real plus derived</span><span class="tag">fast visual review</span></div>
+          <div class="actions"><a class="button primary" href="#perguntas">Perguntas clinicas</a><a class="button" href="#real-review">Midia real</a><a class="button ghost" href="#boards">Boards derivados</a></div>
         </article>
         <article class="hero-card hero-console">
-          <div class="section-head compact"><div><div class="eyebrow">Regra do atlas</div><h2>Ver rapido, achar rapido, reusar melhor</h2></div></div>
+          <div class="section-head compact"><div><div class="eyebrow">Regra do atlas</div><h2>Ver a cena clinica antes de abrir o quadro</h2></div></div>
           <div class="stack-list">
-            <div class="stack-item"><strong>Visual review</strong><span>atalho para revisar sem abrir toda a arvore.</span></div>
-            <div class="stack-item"><strong>Reuse target</strong><span>cada ativo ja aponta para surfaces e Parts onde faz mais sentido.</span></div>
-            <div class="stack-item"><strong>Governanca</strong><span>atlas mostra o que usar; catalogo explica por que e onde.</span></div>
+            <div class="stack-item"><strong>Pergunta antes do asset</strong><span>O atlas comeca em "o que preciso decidir?" e nao em "qual arquivo entrou no lote?".</span></div>
+            <div class="stack-item"><strong>Real antes do derivado</strong><span>Foto, RX, US, sitio de saida e complicacao abrem a leitura; o board entra depois para orientar revisao.</span></div>
+            <div class="stack-item"><strong>Catalogo cuida do registry</strong><span>ID, licenca e rastreio ficam no catalogo. Aqui o foco e reconhecer padrao clinico rapido.</span></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="perguntas">
       <div class="shell dashboard-grid">
-        <article class="panel padded span-6">
-          <figure><img class="full-media" src="../assets/real/derived/v20_premium_system_map.jpg" alt="Premium system map"/><figcaption><strong>ID:</strong> `premium_system_map` · <strong>Dominio:</strong> premium_layer · <strong>Reuso:</strong> premium hub, premium atlas.</figcaption></figure>
-        </article>
-        <article class="panel padded span-6">
-          <div class="section-head"><div><div class="eyebrow">Asset</div><h2>Mapa do sistema</h2></div></div>
-          <p>Ativo de orientacao geral do premium. Melhor uso: explicar a camada, abrir o hub e apoiar dashboard alpha no futuro.</p>
-          <div class="tag-row"><span class="tag">parts 1-9</span><span class="tag">premium_hub</span><span class="tag">premium_atlas</span></div>
-        </article>
-
-        <article class="panel padded span-6">
-          <figure><img class="full-media" src="../assets/real/derived/v20_question_arsenal_board.jpg" alt="Question arsenal board"/><figcaption><strong>ID:</strong> `question_arsenal_board` · <strong>Dominio:</strong> training · <strong>Reuso:</strong> premium atlas, graphics catalog.</figcaption></figure>
-        </article>
-        <article class="panel padded span-6">
-          <div class="section-head"><div><div class="eyebrow">Asset</div><h2>Arsenal de treino</h2></div></div>
-          <p>Board transversal para questoes, prompts de ensino e desenho de casos multi-step. Bom para premium atlas, cases e teacher mode.</p>
-          <div class="tag-row"><span class="tag">training_visual</span><span class="tag">teacher support</span><span class="tag">cases</span></div>
-        </article>
-
-        <article class="panel padded span-6">
-          <figure><img class="full-media" src="../assets/real/derived/maintenance_bundles_board.jpg" alt="Maintenance bundles board"/><figcaption><strong>ID:</strong> `part7_bundle_board` · <strong>Part alvo:</strong> 7 · <strong>Reuso:</strong> reality class, teacher mode, catalog.</figcaption></figure>
-        </article>
-        <article class="panel padded span-6">
-          <div class="section-head"><div><div class="eyebrow">Asset</div><h2>Maintenance bundles board</h2></div></div>
-          <p>Ativo forte para ensino, auditoria de bundle e debriefing sobre o que costuma ser tratado como detalhe.</p>
-          <div class="tag-row"><span class="tag">teaching</span><span class="tag">bundle_audit</span><span class="tag">part7</span></div>
-        </article>
-
-        <article class="panel padded span-6">
-          <figure><img class="full-media" src="../assets/real/derived/hostile_territories_board.jpg" alt="Hostile territories board"/><figcaption><strong>ID:</strong> `part8_hostile_board` · <strong>Part alvo:</strong> 8 · <strong>Reuso:</strong> reality class, catalog, cases.</figcaption></figure>
-        </article>
-        <article class="panel padded span-6">
-          <div class="section-head"><div><div class="eyebrow">Asset</div><h2>Hostile territories board</h2></div></div>
-          <p>Concentra contexto ruim, historia vascular, lado e custo anatomico numa mesma leitura, otimo para Part 8 e casos de replano.</p>
-          <div class="tag-row"><span class="tag">hostile_territories</span><span class="tag">part8</span><span class="tag">multi-step case</span></div>
-        </article>
-
         <article class="panel padded span-12">
-          <div class="section-head"><div><div class="eyebrow">Open real batch</div><h2>Midia real aberta ja entrou no atlas</h2></div></div>
-          <div class="grid-3">
-            <article class="resource-card"><h3>AP + lateral reais</h3><p>Malposicao em azigos agora tem duas vistas reais e vira treino de trajeto, nao foto unica.</p><a class="button primary" href="v20-graphics-catalog.html#open-real-batch-3">Ver lote 3</a></article>
-            <article class="resource-card"><h3>Infeccao e exit site reais</h3><p>O lote 4 coloca sitio de saida e biofilme de cateter dentro do atlas e do ensino docente.</p><a class="button primary" href="v20-graphics-catalog.html#open-real-batch-4">Ver lote 4</a></article>
-            <article class="resource-card"><h3>Licenca e rastreio</h3><p>O atlas agora aponta para quatro lotes abertos, baixados e atribuidos, nao apenas para boards internos.</p><a class="button primary" href="../docs/OPEN_MEDIA_SOURCING.md">Manifesto</a></article>
+          <div class="section-head"><div><div class="eyebrow">Perguntas clinicas</div><h2>Use o atlas para responder rapido o que muda a decisao</h2></div></div>
+          <div class="grid-4">
+            <article class="resource-card"><h3>1. Que familia ou kit esta na frente?</h3><p>Diferenciar CVC, PICC, port e HD temporario antes de chamar tudo de "central".</p></article>
+            <article class="resource-card"><h3>2. A insercao foi pensada ou automatica?</h3><p>Olhar gesto, setup, US e territorio antes de tratar puncao como rotina neutra.</p></article>
+            <article class="resource-card"><h3>3. O trajeto realmente convence?</h3><p>Confirmacao com RX real e duas vistas quando a historia nao fecha.</p></article>
+            <article class="resource-card"><h3>4. O sitio ainda merece ficar?</h3><p>Curativo, sutura, pele e vigilancia diaria antes de virar linha esquecida.</p></article>
+            <article class="resource-card"><h3>5. O preco do erro ja apareceu?</h3><p>Dano toracico, trombose e biofilme entram cedo na revisao, nao como rodape.</p></article>
           </div>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="real-review">
+      <div class="shell dashboard-grid">
+        <article class="panel padded span-8">
+          <div class="section-head"><div><div class="eyebrow">Pergunta 1</div><h2>Que familia ou kit esta na frente?</h2></div></div>
+          <div class="gallery two">
+            <figure><img class="full-media" src="../assets/real/open/cvc/central_venous_catheter_set_wikimedia.jpg" alt="Central venous catheter set"/><figcaption><strong>Kit real de CVC.</strong> Bom para revisar sequencia, Seldinger e o preco de montar o campo para um acesso que talvez nem precisasse escalar.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/picc/picc_line_wikimedia.jpg" alt="PICC line"/><figcaption><strong>PICC real.</strong> Reforca familia, horizonte temporal e manutencao propria antes de qualquer comparador abstrato.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/port/pac_with_gripper_wikimedia.jpg" alt="Port with gripper"/><figcaption><strong>Port com gripper.</strong> Mostra dispositivo implantavel de verdade, logica de Huber e baixa exposicao cutanea.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/hemodialysis/temporary_hemodialysis_catheter_wikimedia.jpg" alt="Temporary hemodialysis catheter"/><figcaption><strong>HD temporario real.</strong> Separa alto fluxo e alto custo biologico de um CVC comum.</figcaption></figure>
+          </div>
+          <div class="actions"><a class="button primary" href="v20-part3-atlas.html">Atlas Part 3</a><a class="button" href="v20-reality-class-part2.html">Escada de acesso</a></div>
+        </article>
+        <article class="panel padded span-4">
+          <figure><img class="full-media" src="../assets/real/open/cvc/healthcare_worker_cvc_wikimedia.jpg" alt="Healthcare worker performing central venous catheterisation"/><figcaption><strong>Contexto vivo de insercao.</strong> O gesto importa. Puncao nunca e neutra, e o setup sempre revela a maturidade da decisao.</figcaption></figure>
+          <div class="section-head compact"><div><div class="eyebrow">Pergunta 2</div><h2>A insercao foi pensada ou automatica?</h2></div></div>
+          <ul class="reality-list">
+            <li><strong>Campo:</strong> o kit e o operador combinam com a necessidade real?</li>
+            <li><strong>Escalada:</strong> a equipe esta escolhendo ou apenas desistindo da periferia?</li>
+            <li><strong>Stop rule:</strong> existe plano para recuar se a historia nao fecha?</li>
+          </ul>
+          <div class="actions"><a class="button primary" href="v20-premium-review.html">Principios</a><a class="button ghost" href="v20-cross-part-cases.html">Casos</a></div>
+        </article>
+
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Pergunta 2</div><h2>A janela e o territorio permitem insistir?</h2></div></div>
+          <div class="gallery two">
+            <figure><img class="full-media" src="../assets/real/open/ultrasound/neck_ultrasound_procedural_wikimedia.jpg" alt="Neck ultrasound procedural photo"/><figcaption><strong>US procedural real.</strong> Bom para lembrar que orientacao de probe e leitura do campo comecam antes da agulha.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/ultrasound/ijv_narrowing_mid_neck_wikimedia.jpg" alt="Right internal jugular narrowing ultrasound"/><figcaption><strong>IJV estreitada.</strong> Territorio hostil real para quebrar a fantasia de anatomia sempre amigavel.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/ultrasound/ijv_collaterals_neck_mass_wikimedia.jpg" alt="Right internal jugular collaterals ultrasound"/><figcaption><strong>Colaterais reais.</strong> Quando o territorio ja esta cobrando mais raciocinio do que o piloto automatico tolera.</figcaption></figure>
+          </div>
+          <div class="actions"><a class="button primary" href="v20-reality-class-part8.html">Territorios hostis</a><a class="button ghost" href="v20-graphics-catalog.html#open-real-batch-2">Batch de US</a></div>
+        </article>
+
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Pergunta 3</div><h2>O trajeto realmente convence?</h2></div></div>
+          <div class="gallery two">
+            <figure><img class="full-media" src="../assets/real/open/cvc/human_chest_xray_cvc_wikimedia.jpg" alt="Human chest xray with central venous catheter"/><figcaption><strong>RX real com CVC.</strong> Leitura basal de trajeto, ponta e torax no mesmo quadro.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/xray/subclavian_central_venous_catheter_xray_wikimedia.png" alt="Subclavian central venous catheter xray"/><figcaption><strong>Linha subclavia real.</strong> Tira a confirmacao do desenho limpo e devolve a complexidade do campo real.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/malposition/port_acath_azygos_ap_wikimedia.jpg" alt="Port a cath in azygos AP view"/><figcaption><strong>AP real.</strong> Acende suspeita, mas ainda nao basta para encerrar a historia.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/malposition/port_acath_azygos_lateral_wikimedia.jpg" alt="Port a cath in azygos lateral view"/><figcaption><strong>Lateral real.</strong> A segunda vista transforma suspeita em trajeto aberrante concreto.</figcaption></figure>
+          </div>
+          <div class="callout warn"><strong>Leitura rapida:</strong> AP bonita nao absolve trajeto estranho. Quando a historia nao fecha, a equipe madura pede outra vista ou outro metodo.</div>
+          <div class="actions"><a class="button primary" href="v20-part5-atlas.html">Atlas Part 5</a><a class="button ghost" href="v20-graphics-catalog.html#open-real-batch-3">Batch de imagem</a></div>
+        </article>
+
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Pergunta 4</div><h2>O sitio ainda merece ficar?</h2></div></div>
+          <div class="gallery two">
+            <figure><img class="full-media" src="../assets/real/open/maintenance/central_vein_catheter_entry_site_wikimedia.jpg" alt="Central vein catheter exit site"/><figcaption><strong>Exit site real.</strong> Pele, trajeto externo e vigilanca diaria entram antes do discurso de "esta funcionando".</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/maintenance/central_vein_line_dressing_wikimedia.jpg" alt="Central vein line dressing"/><figcaption><strong>Curativo transparente real.</strong> Bom para discutir o que esta visivel, o que esta oculto e o que exige troca.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/maintenance/central_line_sutures_wikimedia.jpg" alt="Central line sutures"/><figcaption><strong>Suturas reais.</strong> Fixacao ruim e detalhe cobrado todo dia, nao so no procedimento.</figcaption></figure>
+          </div>
+          <div class="actions"><a class="button primary" href="v20-reality-class-part7.html">Part 7</a><a class="button ghost" href="v20-graphics-catalog.html#open-real-batch-4">Batch de manutencao</a></div>
+        </article>
+
+        <article class="panel padded span-6">
+          <div class="section-head"><div><div class="eyebrow">Pergunta 5</div><h2>O preco do erro ja apareceu?</h2></div></div>
+          <div class="gallery two">
+            <figure><img class="full-media" src="../assets/real/open/infection/catheter_biofilm_staph_phil_7486.jpg" alt="Staphylococcal biofilm on catheter"/><figcaption><strong>Biofilme real por staph.</strong> A infeccao deixa de ser slogan e passa a ser superficie colonizada de verdade.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/infection/catheter_biofilm_alcaligenes_phil_10548.jpg" alt="Alcaligenes biofilm and fibrin material in catheter lumen"/><figcaption><strong>Biofilme com fibrina.</strong> Bom para discutir infeccao, oclusao e salvage sem romantizar linha velha.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/complication/chest_xray_pneumothorax_wikimedia.png" alt="Chest xray of pneumothorax"/><figcaption><strong>Pneumotorax real.</strong> Dano toracico tem que aparecer cedo no review, nao como icone de alerta generico.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/open/complication/ct_superior_vena_cava_thrombosis_wikimedia.png" alt="CT of superior vena cava thrombosis"/><figcaption><strong>Trombose de VCS real.</strong> Mostra o custo tardio de permanencia, trombose e territorio que fecha.</figcaption></figure>
+          </div>
+          <div class="actions"><a class="button primary" href="v20-premium-review.html">Review transversal</a><a class="button ghost" href="v20-cross-part-cases.html">Casos</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="boards">
+      <div class="shell dashboard-grid">
+        <article class="panel padded span-12">
+          <div class="section-head"><div><div class="eyebrow">Boards derivados</div><h2>Derivado entra para acelerar a revisao do que a midia real ja mostrou</h2></div></div>
+          <p>Nenhum board abaixo deveria abrir a pagina. Eles funcionam melhor como segundo passo: comprimir padrao, puxar ensino e indicar reuso depois que o olho ja passou pelo material clinico.</p>
+          <div class="gallery two">
+            <figure><img class="full-media" src="../assets/real/derived/v20_question_arsenal_board.jpg" alt="Question arsenal board"/><figcaption><strong>Question arsenal board.</strong> Depois da midia real, vira prompt visual para MCQ, OSCE, teacher mode e debriefing.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/derived/maintenance_bundles_board.jpg" alt="Maintenance bundles board"/><figcaption><strong>Maintenance bundles board.</strong> Resume curativo, sitio, fixacao e auditoria diaria sem esconder o corpo real que motivou o bundle.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/derived/hostile_territories_board.jpg" alt="Hostile territories board"/><figcaption><strong>Hostile territories board.</strong> Condensa territorio ruim, historia vascular e replano depois do US e da complicacao real.</figcaption></figure>
+            <figure><img class="full-media" src="../assets/real/derived/v20_premium_system_map.jpg" alt="Premium system map"/><figcaption><strong>Premium system map.</strong> Serve como mapa de surfaces e reuso, nao como primeiro contato com a pergunta clinica.</figcaption></figure>
+          </div>
+          <div class="reality-nav"><a class="button primary" href="v20-premium-review.html">Premium Review</a><a class="button" href="v20-graphics-catalog.html">Catalogo grafico</a><a class="button ghost" href="../docs/V20_PREMIUM_UNIFIED.md">Contrato premium</a></div>
+        </article>
 
         <article class="panel padded span-12">
-          <div class="section-head"><div><div class="eyebrow">Pontes por Part</div><h2>Posters que puxam mergulho vertical</h2></div></div>
-          <div class="grid-3">
-            <article class="resource-card"><h3>Poster Part 2</h3><p>Escada do acesso e algoritmo de escalada. Melhor ponte para decisao e casos de escalada precoce.</p><a class="button primary" href="v20-reality-class-part2.html">Part 2</a></article>
-            <article class="resource-card"><h3>Poster Part 3</h3><p>Atlas e comparadores de familias. Melhor ponte para identidade de dispositivo.</p><a class="button primary" href="v20-part3-atlas.html">Atlas Part 3</a></article>
-            <article class="resource-card"><h3>Poster Part 4</h3><p>Tecnica viva, troubleshooting e checklists. Melhor ponte para OSCE e code lab.</p><a class="button primary" href="v20-part4-osce.html">OSCE Part 4</a></article>
-            <article class="resource-card"><h3>Poster Part 5</h3><p>Imagem, malposicao, artefato e atlas de confirmacao. Melhor ponte para review de confirmacao.</p><a class="button primary" href="v20-part5-atlas.html">Atlas Part 5</a></article>
-            <article class="resource-card"><h3>Graphics catalog</h3><p>Quando o objetivo deixa de ser revisao rapida e vira governanca e descoberta de asset.</p><a class="button primary" href="v20-graphics-catalog.html">Abrir catalogo</a></article>
-            <article class="resource-card"><h3>Contrato e metadado</h3><p>Use o documento premium, o registry de midia e o manifesto aberto quando precisar organizar o proximo lote.</p><a class="button primary" href="../docs/V20_PREMIUM_UNIFIED.md">Contrato</a></article>
+          <div class="section-head"><div><div class="eyebrow">Saidas naturais</div><h2>Troque de superficie pelo tipo de trabalho, nao pelo fascinio do asset</h2></div></div>
+          <div class="grid-4">
+            <article class="resource-card"><h3>Premium Review</h3><p>Quando a pergunta continua clinica e transversal, costure principios e falhas recorrentes.</p><a class="button primary" href="v20-premium-review.html">Abrir review</a></article>
+            <article class="resource-card"><h3>Atlas Part 3</h3><p>Quando o foco for identidade de dispositivo e comparadores de familia.</p><a class="button primary" href="v20-part3-atlas.html">Abrir Part 3</a></article>
+            <article class="resource-card"><h3>Atlas Part 5</h3><p>Quando a duvida principal estiver em imagem, confirmacao e malposicao.</p><a class="button primary" href="v20-part5-atlas.html">Abrir Part 5</a></article>
+            <article class="resource-card"><h3>Catalogo grafico</h3><p>Quando o trabalho virar ID, licenca, lote, reuse targets e governanca editorial.</p><a class="button primary" href="v20-graphics-catalog.html">Abrir catalogo</a></article>
           </div>
         </article>
       </div>
     </section>
   </main>
-  <footer class="footer shell"><div>CVC Academy · Premium Atlas.</div><div class="footer-links"><a href="v20-premium-review.html">Review</a><a href="v20-graphics-catalog.html">Catalogo</a></div></footer>
+  <footer class="footer shell"><div>CVC Academy - Premium Atlas.</div><div class="footer-links"><a href="v20-premium-review.html">Review</a><a href="v20-graphics-catalog.html">Catalogo</a></div></footer>
   <script src="../scripts/search-index.js"></script><script src="../scripts/site.js"></script><script src="../scripts/sw-register.js"></script>
 </body>
 </html>
