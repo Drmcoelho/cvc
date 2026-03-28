@@ -1,5 +1,7 @@
 archive/
 browser_walk_report.md
+browser_walk_live_report.md
+live_interaction_report.md
 tools/__pycache__/
 *.pyc
 .DS_Store

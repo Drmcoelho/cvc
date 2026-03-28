@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Browser-driven walkthrough of the canonical CVC bundle using Safari WebDriver."""
+"""Browser-driven walkthrough of the canonical CVC bundle or published Pages site."""
 
 from __future__ import annotations
 
@@ -23,6 +23,7 @@ from run_bundle import BUNDLE_ROOT
 
 WORKSPACE_ROOT = Path(__file__).resolve().parents[1]
 REPORT_DEFAULT = WORKSPACE_ROOT / "browser_walk_report.md"
+LIVE_REPORT_DEFAULT = WORKSPACE_ROOT / "browser_walk_live_report.md"
 CHROME_BINARY = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 
@@ -77,6 +78,15 @@ def build_page_list(include_workspace_index: bool) -> list[str]:
     pages.append("/project/cvc_academy_v20_premium_dual_layer/index.html")
     for page in sorted((BUNDLE_ROOT / "pages").glob("*.html")):
         pages.append("/project/cvc_academy_v20_premium_dual_layer/pages/" + page.name)
+    return pages
+
+
+def build_live_page_list(include_404: bool) -> list[str]:
+    pages = ["/", "/index.html"]
+    for page in sorted((BUNDLE_ROOT / "pages").glob("*.html")):
+        pages.append("/pages/" + page.name)
+    if include_404:
+        pages.append("/404.html")
     return pages
 
 
@@ -322,22 +332,30 @@ def render_report(results: list[PageResult], report_path: Path) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Walk all bundle pages in Safari WebDriver.")
+    parser = argparse.ArgumentParser(description="Walk local bundle pages or a published Pages site in Safari WebDriver.")
     parser.add_argument("--browser", choices=["auto", "safari", "chrome"], default="auto")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765, help="Preferred workspace HTTP port.")
     parser.add_argument("--webdriver-port", type=int, default=4444, help="Preferred safaridriver port.")
-    parser.add_argument("--report", default=str(REPORT_DEFAULT), help="Where to write the markdown report.")
+    parser.add_argument("--report", default=None, help="Where to write the markdown report.")
     parser.add_argument("--skip-root-index", action="store_true", help="Skip workspace root launcher page.")
+    parser.add_argument("--base-url", default="", help="Remote base URL to walk instead of starting a local HTTP server.")
+    parser.add_argument("--include-404", action="store_true", help="Include the published 404 page in remote mode.")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
-    report_path = Path(args.report).resolve()
+    remote_mode = bool(args.base_url.strip())
+    default_report = LIVE_REPORT_DEFAULT if remote_mode else REPORT_DEFAULT
+    report_path = Path(args.report or default_report).resolve()
     report_path.parent.mkdir(parents=True, exist_ok=True)
 
-    pages = build_page_list(include_workspace_index=not args.skip_root_index)
+    pages = (
+        build_live_page_list(include_404=args.include_404)
+        if remote_mode
+        else build_page_list(include_workspace_index=not args.skip_root_index)
+    )
     workspace_server = None
     thread = None
     driver = None
@@ -347,8 +365,14 @@ def main() -> int:
     browser_used = args.browser
 
     try:
-        workspace_server, actual_port, thread = start_workspace_server(args.host, args.port)
-        wait_for_http(f"http://{args.host}:{actual_port}/index.html")
+        if remote_mode:
+            base_url = args.base_url.rstrip("/")
+            wait_for_http(base_url + "/")
+            actual_port = None
+        else:
+            workspace_server, actual_port, thread = start_workspace_server(args.host, args.port)
+            wait_for_http(f"http://{args.host}:{actual_port}/index.html")
+            base_url = f"http://{args.host}:{actual_port}"
 
         if args.browser in {"auto", "safari"}:
             try:
@@ -372,7 +396,7 @@ def main() -> int:
             browser_used = "chrome"
 
         for path in pages:
-            url = f"http://{args.host}:{actual_port}{path}"
+            url = base_url + path
             try:
                 if browser_used == "safari":
                     result = inspect_page(args.host, actual_webdriver_port, session_id, url, path)
@@ -399,6 +423,7 @@ def main() -> int:
         print("")
         print(f"Report: {report_path}")
         print(f"Browser used: {browser_used}")
+        print(f"Mode: {'remote' if remote_mode else 'local'}")
         print(f"Pages walked: {len(results)}")
         print(f"Pages with flags: {len(failed)}")
         return 1 if failed else 0

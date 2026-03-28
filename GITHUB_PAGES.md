@@ -86,6 +86,16 @@ Checar:
 - `manifest.json`
 - registro do service worker em contexto HTTPS
 
+Comandos uteis para revisao automatizada:
+
+```bash
+python3 tools/browser_walk_bundle.py --browser safari --base-url https://drmcoelho.github.io/cvc --include-404 --report browser_walk_live_report.md
+python3 tools/review_live_interactions.py --base-url https://drmcoelho.github.io/cvc --report live_interaction_report.md
+```
+
+O primeiro faz walkthrough estrutural do site publicado.
+O segundo valida interacao real em Safari: estado local, dashboard, arena e service worker.
+
 ## Observacao importante
 
 O site online nao substitui o pacote local.
