@@ -24,7 +24,7 @@ from browser_walk_bundle import (
 )
 
 
-REPORT_DEFAULT = WORKSPACE_ROOT / "live_interaction_report.md"
+REPORT_DEFAULT = WORKSPACE_ROOT / "docs" / "qa" / "live_interaction_report.md"
 
 
 @dataclass

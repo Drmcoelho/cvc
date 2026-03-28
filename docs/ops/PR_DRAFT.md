@@ -36,10 +36,10 @@ This PR turns the current CVC Academy workspace into a deliverable mega MVP bund
 
 ### Documentation and governance
 
-- updated `codex.md`, `roadmap.md`, `master_schema.md`, and `execution_matrix.md`
-- added `MEGA_MVP_HANDOFF.md`
-- added `RUN_LOCAL.md`
-- documented PR continuity policy in `codex.md`
+- updated `docs/foundation/codex.md`, `docs/foundation/roadmap.md`, `docs/foundation/master_schema.md`, and `docs/planning/execution_matrix.md`
+- added `docs/ops/MEGA_MVP_HANDOFF.md`
+- added `docs/ops/RUN_LOCAL.md`
+- documented PR continuity policy in `docs/foundation/codex.md`
 
 ## Testing
 
@@ -64,4 +64,4 @@ This PR turns the current CVC Academy workspace into a deliverable mega MVP bund
 
 ## Follow-up PR
 
-Per `codex.md`, the next coherent work cycle should open a new PR instead of extending this one, unless explicitly requested otherwise.
+Per `docs/foundation/codex.md`, the next coherent work cycle should open a new PR instead of extending this one, unless explicitly requested otherwise.

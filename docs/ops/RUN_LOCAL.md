@@ -140,4 +140,4 @@ Para revisao editorial rapida, `index.html` basta.
 
 Para revisao funcional de produto, use `dashboard.zsh`.
 
-Para validacao publica em URL real, use o fluxo documentado em `GITHUB_PAGES.md`.
+Para validacao publica em URL real, use o fluxo documentado em `docs/ops/GITHUB_PAGES.md`.

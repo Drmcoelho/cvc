@@ -22,8 +22,8 @@ from run_bundle import BUNDLE_ROOT
 
 
 WORKSPACE_ROOT = Path(__file__).resolve().parents[1]
-REPORT_DEFAULT = WORKSPACE_ROOT / "browser_walk_report.md"
-LIVE_REPORT_DEFAULT = WORKSPACE_ROOT / "browser_walk_live_report.md"
+REPORT_DEFAULT = WORKSPACE_ROOT / "docs" / "qa" / "browser_walk_report.md"
+LIVE_REPORT_DEFAULT = WORKSPACE_ROOT / "docs" / "qa" / "browser_walk_live_report.md"
 CHROME_BINARY = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 

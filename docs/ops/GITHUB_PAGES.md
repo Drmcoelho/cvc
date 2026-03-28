@@ -89,8 +89,8 @@ Checar:
 Comandos uteis para revisao automatizada:
 
 ```bash
-python3 tools/browser_walk_bundle.py --browser safari --base-url https://drmcoelho.github.io/cvc --include-404 --report browser_walk_live_report.md
-python3 tools/review_live_interactions.py --base-url https://drmcoelho.github.io/cvc --report live_interaction_report.md
+python3 tools/browser_walk_bundle.py --browser safari --base-url https://drmcoelho.github.io/cvc --include-404 --report docs/qa/browser_walk_live_report.md
+python3 tools/review_live_interactions.py --base-url https://drmcoelho.github.io/cvc --report docs/qa/live_interaction_report.md
 ```
 
 O primeiro faz walkthrough estrutural do site publicado.

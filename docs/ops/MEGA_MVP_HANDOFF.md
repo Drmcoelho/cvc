@@ -53,7 +53,7 @@ Checks ja fechados:
 ### Fluxo online via GitHub Pages
 
 - `.github/workflows/pages.yml`
-- `GITHUB_PAGES.md`
+- `docs/ops/GITHUB_PAGES.md`
 - publica apenas `project/cvc_academy_v20_premium_dual_layer`
 - mantem o bundle local como fonte canonica
 
@@ -214,9 +214,9 @@ Mas ainda nao e:
 
 - `index.html`
 - `dashboard.zsh`
-- `RUN_LOCAL.md`
-- `execution_matrix.md`
-- `master_schema.md`
+- `docs/ops/RUN_LOCAL.md`
+- `docs/planning/execution_matrix.md`
+- `docs/foundation/master_schema.md`
 - `project/cvc_academy_v20_premium_dual_layer/index.html`
 - `project/cvc_academy_v20_premium_dual_layer/pages/dashboard-alpha.html`
 - `project/cvc_academy_v20_premium_dual_layer/pages/training-arena.html`
